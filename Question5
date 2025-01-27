@@ -1,0 +1,21 @@
+varshini@varshini:~/Module1$ ls -fl ./dir1
+total 12
+drwxrwxr-x 2 varshini varshini 4096 Jan 27 10:44 dir2
+-rw-rw-r-- 1 varshini varshini    0 Jan 27 10:59 files2.txt
+-rw-rw-r-- 1 varshini varshini    0 Jan 27 10:59 files3.txt
+drwxrwxr-x 3 varshini varshini 4096 Jan 27 10:59 .
+-rw-rw-r-- 1 varshini varshini    0 Jan 27 10:59 files1.txt
+drwxrwxr-x 3 varshini varshini 4096 Jan 27 10:55 ..
+lrwxrwxrwx 1 varshini varshini   14 Jan 27 10:45 file1link.txt -> dir2/file1.txt
+varshini@varshini:~/Module1$ ls -fl ./dir1 > sysfile
+varshini@varshini:~/Module1$ mv sysfile ./dir1
+varshini@varshini:~/Module1$ sort -k 8 ./dir1/sysfile
+total 12
+drwxrwxr-x 2 varshini varshini 4096 Jan 27 10:44 dir2
+lrwxrwxrwx 1 varshini varshini   14 Jan 27 10:45 file1link.txt -> dir2/file1.txt
+drwxrwxr-x 3 varshini varshini 4096 Jan 27 10:59 .
+-rw-rw-r-- 1 varshini varshini    0 Jan 27 10:59 files1.txt
+-rw-rw-r-- 1 varshini varshini    0 Jan 27 10:59 files2.txt
+-rw-rw-r-- 1 varshini varshini    0 Jan 27 10:59 files3.txt
+drwxrwxr-x 3 varshini varshini 4096 Jan 27 11:03 ..
+

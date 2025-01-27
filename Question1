@@ -1,0 +1,7 @@
+varshini@varshini:~/Module1$ touch file.txt
+varshini@varshini:~/Module1$ ls -fl file.txt
+-rw-rw-r-- 1 varshini varshini 0 Jan 27 10:28 file.txt
+varshini@varshini:~/Module1$ chmod 777 file.txt
+varshini@varshini:~/Module1$ ls -fl file.txt
+-rwxrwxrwx 1 varshini varshini 0 Jan 27 10:28 file.txt
+

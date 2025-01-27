@@ -1,0 +1,10 @@
+varshini@varshini:~/Module1$ ps -aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.6  22968 14080 ?        Ss   10:04   0:02 /sbin/init splash
+root           2  0.0  0.0      0     0 ?        S    10:04   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    10:04   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   10:04   0:00 [kworker/R-rcu_g]
+root           5  0.0  0.0      0     0 ?        I<   10:04   0:00 [kworker/R-rcu_p]
+root           6  0.0  0.0      0     0 ?        I<   10:04   0:00 [kworker/R-slub_]
+root           7  0.0  0.0      0     0 ?        I<   10:04   0:00 [kworker/R-netns]
+...

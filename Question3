@@ -1,0 +1,6 @@
+varshini@varshini:~/Module1$ mkdir -p dir1/dir2
+varshini@varshini:~/Module1$ touch ./dir1/dir2/file1.txt
+
+varshini@varshini:~/Module1$ ln -srf ./dir1/dir2/file1.txt ./dir1/file1link.txt
+
+
