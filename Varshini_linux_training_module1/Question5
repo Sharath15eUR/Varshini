@@ -1,0 +1,30 @@
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module1$ touch ./dir1/file1
+
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module1$ touch ./dir1/file2
+
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module1$ touch ./dir1/file3
+
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module1$ ls -lt ./dir1
+total 4
+-rw-rw-r-- 1 varshini varshini    0 Jan 27 22:15 file3
+-rw-rw-r-- 1 varshini varshini    0 Jan 27 22:14 file2
+-rw-rw-r-- 1 varshini varshini    0 Jan 27 22:11 file1
+lrwxrwxrwx 1 varshini varshini   14 Jan 27 22:05 sfile_link -> dir2/sfile.txt
+drwxrwxr-x 2 varshini varshini 4096 Jan 27 15:46 dir2
+
+arshini@varshini:~/Linux/Varshini/Varshini_linux_training_module1$ ls -lt ./dir1 > ./dir1/sysfile
+
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module1$ sort -k 8 ./dir1/sysfile > ./dir1/sortedlist
+
+
+
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module1$ cat ./dir1/sortedlist
+total 4
+drwxrwxr-x 2 varshini varshini 4096 Jan 27 15:46 dir2
+lrwxrwxrwx 1 varshini varshini   14 Jan 27 22:05 sfile_link -> dir2/sfile.txt
+-rw-rw-r-- 1 varshini varshini    0 Jan 27 22:11 file1
+-rw-rw-r-- 1 varshini varshini    0 Jan 27 22:14 file2
+-rw-rw-r-- 1 varshini varshini    0 Jan 27 22:15 file3
+-rw-rw-r-- 1 varshini varshini    0 Jan 27 22:30 sysfile
+
+

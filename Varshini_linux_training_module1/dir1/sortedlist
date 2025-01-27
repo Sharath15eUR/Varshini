@@ -1,0 +1,7 @@
+total 4
+drwxrwxr-x 2 varshini varshini 4096 Jan 27 15:46 dir2
+lrwxrwxrwx 1 varshini varshini   14 Jan 27 22:05 sfile_link -> dir2/sfile.txt
+-rw-rw-r-- 1 varshini varshini    0 Jan 27 22:11 file1
+-rw-rw-r-- 1 varshini varshini    0 Jan 27 22:14 file2
+-rw-rw-r-- 1 varshini varshini    0 Jan 27 22:15 file3
+-rw-rw-r-- 1 varshini varshini    0 Jan 27 22:30 sysfile

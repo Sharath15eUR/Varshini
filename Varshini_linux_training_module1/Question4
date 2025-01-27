@@ -1,0 +1,16 @@
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module1$ ps -aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.5  22968 10496 ?        Ss   18:24   0:02 /sbin/init splash
+root           2  0.0  0.0      0     0 ?        S    18:24   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    18:24   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   18:24   0:00 [kworker/R-rcu_g]
+root           5  0.0  0.0      0     0 ?        I<   18:24   0:00 [kworker/R-rcu_p]
+root           6  0.0  0.0      0     0 ?        I<   18:24   0:00 [kworker/R-slub_]
+root           7  0.0  0.0      0     0 ?        I<   18:24   0:00 [kworker/R-netns]
+root          12  0.0  0.0      0     0 ?        I<   18:24   0:00 [kworker/R-mm_pe]
+root          13  0.0  0.0      0     0 ?        I    18:24   0:00 [rcu_tasks_kthread]
+root          14  0.0  0.0      0     0 ?        I    18:24   0:00 [rcu_tasks_rude_kthread]
+root          15  0.0  0.0      0     0 ?        I    18:24   0:00 [rcu_tasks_trace_kthread]
+root          16  0.0  0.0      0     0 ?        S    18:24   0:00 [ksoftirqd/0]
+...
+

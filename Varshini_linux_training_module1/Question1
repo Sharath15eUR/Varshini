@@ -1,0 +1,12 @@
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module1$ touch file.txt
+
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module1$ ls -fl file.txt
+
+-rw-rw-r-- 1 varshini varshini 0 Jan 27 15:39 file.txt
+
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module1$ chmod a+x file.txt
+
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module1$ ls -fl file.txt
+
+-rwxrwxr-x 1 varshini varshini 0 Jan 27 15:39 file.txt
+
