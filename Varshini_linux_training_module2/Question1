@@ -1,0 +1,17 @@
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module2$ ls -f
+Question5  Question4  config.txt  .  Question3	filtered_log.txt  log.txt  ..  updated_config.txt  Question2
+
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module2$ find . -maxdepth 1 -type f -size +1k
+./Question4
+./Question3
+
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module2$ find . -maxdepth 1 -type f -size +1k > Greater_than_1k.txt
+
+
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module2$ find . -maxdepth 1 -type f -size +1M 
+
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module2$ find . -maxdepth 1 -type f -size +1M > Greater_than_1MB.txt
+
+
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module2$ mv Greater_than_1k.txt Greater_than_1KB.txt
+

@@ -1,0 +1,7 @@
+# Sample Configuration File 
+server = localhost 
+database_host = localhost 
+port = 3306 
+api_url = http://localhost:8080 
+log_path = /var/log/localhost 
+timeout = 30 

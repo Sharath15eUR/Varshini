@@ -1,0 +1,22 @@
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module2$ pid=$(ps -aux --sort=-%mem | awk 'NR==2 {print $2}')
+
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module2$ ps -aux --sort=-%mem
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+varshini    1854 10.0 18.5 3482612 374108 ?      Ssl  00:05   0:06 /usr/bin/gnome-shell
+varshini    2351  4.9 12.5 1151844 253804 ?      Sl   00:05   0:03 /usr/bin/nautilus --gapplication-service
+varshini    2546  0.2  4.4 803528 89848 ?        Sl   00:05   0:00 /usr/libexec/mutter-x11-frames
+varshini    2522  0.2  3.7 622576 75640 ?        Ssl  00:05   0:00 /usr/libexec/gsd-xsettings
+varshini    2465  0.4  3.0 2814952 61008 ?       Sl   00:05   0:00 gjs /usr/share/gnome-shell/extensions/ding@rastersof
+varshini    1983  0.1  2.9 817772 59780 ?        Sl   00:05   0:00 /usr/libexec/evolution-data-server/evolution-alarm-n
+varshini    2519  0.0  2.9 216460 59264 ?        S    00:05   0:00 /usr/bin/Xwayland :0 -rootless -noreset -accessx -co
+.......
+
+
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module2$ ps -p $pid
+    PID TTY          TIME CMD
+   1854 ?        00:00:08 gnome-shell
+   
+   
+
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module2$ kill $pid
+
