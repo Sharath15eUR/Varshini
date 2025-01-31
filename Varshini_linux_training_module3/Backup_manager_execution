@@ -1,0 +1,68 @@
+varshini@varshini:~/Module3$ cd /home/varshini/Linux/Varshini/Varshini_linux_training_module3
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module3$ ls -l backup_manager.sh
+-rwxrw-r-- 1 varshini varshini 2359 Jan 31 17:01 backup_manager.sh
+
+
+# COMMAND-LINE ARGUMENTS CHECK
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module3$ ./backup_manager.sh
+Please, Enter the source directory, destination directory an the file format
+
+
+# CHECK FOR SOURCE DIRECTORY
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module3$ ./backup_manager.sh ./src ./back .txt
+Source directory not found
+
+
+# CREATION OF BACKUP WITH REPORT
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module3$ ./backup_manager.sh ./source ./backup .txt
+Backup directory not found. Creation of directory for backup
+Backup files ./source/file1.txt ./source/file2.txt ./source/file3.txt
+
+Name:file1.txt Size:0 File to be backup:./backup/file1.txt
+
+Name:file2.txt Size:0 File to be backup:./backup/file2.txt
+
+Name:file3.txt Size:0 File to be backup:./backup/file3.txt
+
+Backup Summary Report
+
+Total files processed: 3
+Total size of files backed up: 0
+Source directory: ./source
+Backup directory: ./backup
+
+
+# CHECK BACKUP DIRECTORY
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module3$ ./backup_manager.sh ./source ./backup .txt
+Backup files ./source/file1.txt ./source/file2.txt ./source/file3.txt
+
+Name:file1.txt Size:0 File to be backup:./backup/file1.txt
+Backup already exists
+
+Name:file2.txt Size:0 File to be backup:./backup/file2.txt
+Backup already exists
+
+Name:file3.txt Size:0 File to be backup:./backup/file3.txt
+Backup already exists
+
+No files were backedup
+
+
+# FILES CHECK IN DIRECTORY
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module3$ ./backup_manager.sh ./source ./backup .log
+Backup files ./source/*.log
+No files are inside source directory ./source with this extension .log
+
+
+# BACKUP REPORT
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module3$ cat Backupreport.log
+
+Backup Summary Report
+
+Total files processed: 3
+Total size of files backed up: 0
+Source directory: ./source
+Backup directory: ./backup
+
+
+
