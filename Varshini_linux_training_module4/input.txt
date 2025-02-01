@@ -1,0 +1,1239 @@
+{ 
+
+  "layers": { 
+
+    "frame": { 
+
+      "frame.time": "Dec 31, 2024 12:52:25.890970000 India Standard Time", 
+
+      "frame.time_utc": "Dec 31, 2024 07:22:25.890970000 UTC", 
+
+      "frame.number": "1", 
+
+      "frame.len": "680" 
+
+    }, 
+
+    "wlan": { 
+
+      "wlan.fc.type_subtype": "0x0009", 
+
+      "wlan.fc": "0x8000", 
+
+      "wlan.fc_tree": { 
+
+        "wlan.fc.version": "0", 
+
+        "wlan.fc.type": "0", 
+
+        "wlan.fc.subtype": "9", 
+
+        "wlan.flags": "0x00", 
+
+        "wlan.flags_tree": { 
+
+          "wlan.fc.ds": "0x00", 
+
+          "wlan.fc.tods": "0", 
+
+          "wlan.fc.fromds": "0", 
+
+          "wlan.fc.frag": "0", 
+
+          "wlan.fc.retry": "0", 
+
+          "wlan.fc.pwrmgt": "0", 
+
+          "wlan.fc.moredata": "0", 
+
+          "wlan.fc.protected": "0", 
+
+          "wlan.fc.order": "0" 
+
+        } 
+
+      } 
+
+    } 
+
+  } 
+
+} 
+
+{ 
+
+  "layers": { 
+
+    "frame": { 
+
+      "frame.time": "Dec 31, 2024 12:53:25.890970000 India Standard Time", 
+
+      "frame.time_utc": "Dec 31, 2024 07:23:25.890970000 UTC", 
+
+      "frame.number": "2", 
+
+      "frame.len": "690" 
+
+    }, 
+
+    "wlan": { 
+
+      "wlan.fc.type_subtype": "0x0006", 
+
+      "wlan.fc": "0x8000", 
+
+      "wlan.fc_tree": { 
+
+        "wlan.fc.version": "0", 
+
+        "wlan.fc.type": "0", 
+
+        "wlan.fc.subtype": "6", 
+
+        "wlan.flags": "0x00", 
+
+        "wlan.flags_tree": { 
+
+          "wlan.fc.ds": "0x00", 
+
+          "wlan.fc.tods": "0", 
+
+          "wlan.fc.fromds": "0", 
+
+          "wlan.fc.frag": "0", 
+
+          "wlan.fc.retry": "0", 
+
+          "wlan.fc.pwrmgt": "0", 
+
+          "wlan.fc.moredata": "0", 
+
+          "wlan.fc.protected": "0", 
+
+          "wlan.fc.order": "0" 
+
+        } 
+
+      } 
+
+    } 
+
+  } 
+
+} 
+
+{ 
+
+  "layers": { 
+
+    "frame": { 
+
+      "frame.time": "Dec 31, 2024 12:54:25.890970000 India Standard Time", 
+
+      "frame.time_utc": "Dec 31, 2024 07:24:25.890970000 UTC", 
+
+      "frame.number": "3", 
+
+      "frame.len": "680" 
+
+    }, 
+
+    "wlan": { 
+
+      "wlan.fc.type_subtype": "0x0004", 
+
+      "wlan.fc": "0x8000", 
+
+      "wlan.fc_tree": { 
+
+        "wlan.fc.version": "0", 
+
+        "wlan.fc.type": "0", 
+
+        "wlan.fc.subtype": "4", 
+
+        "wlan.flags": "0x00", 
+
+        "wlan.flags_tree": { 
+
+          "wlan.fc.ds": "0x00", 
+
+          "wlan.fc.tods": "0", 
+
+          "wlan.fc.fromds": "0", 
+
+          "wlan.fc.frag": "0", 
+
+          "wlan.fc.retry": "0", 
+
+          "wlan.fc.pwrmgt": "0", 
+
+          "wlan.fc.moredata": "0", 
+
+          "wlan.fc.protected": "0", 
+
+          "wlan.fc.order": "0" 
+
+        } 
+
+      } 
+
+    } 
+
+  } 
+
+} 
+
+{ 
+
+  "layers": { 
+
+    "frame": { 
+
+      "frame.time": "Dec 31, 2024 12:55:25.890970000 India Standard Time", 
+
+      "frame.time_utc": "Dec 31, 2024 07:25:25.890970000 UTC", 
+
+      "frame.number": "4", 
+
+      "frame.len": "695" 
+
+    }, 
+
+    "wlan": { 
+
+      "wlan.fc.type_subtype": "0x0003", 
+
+      "wlan.fc": "0x8000", 
+
+      "wlan.fc_tree": { 
+
+        "wlan.fc.version": "0", 
+
+        "wlan.fc.type": "0", 
+
+        "wlan.fc.subtype": "3", 
+
+        "wlan.flags": "0x00", 
+
+        "wlan.flags_tree": { 
+
+          "wlan.fc.ds": "0x00", 
+
+          "wlan.fc.tods": "0", 
+
+          "wlan.fc.fromds": "0", 
+
+          "wlan.fc.frag": "0", 
+
+          "wlan.fc.retry": "0", 
+
+          "wlan.fc.pwrmgt": "0", 
+
+          "wlan.fc.moredata": "0", 
+
+          "wlan.fc.protected": "0", 
+
+          "wlan.fc.order": "0" 
+
+        } 
+
+      } 
+
+    } 
+
+  } 
+
+} 
+
+{ 
+
+  "layers": { 
+
+    "frame": { 
+
+      "frame.time": "Dec 31, 2024 12:56:25.890970000 India Standard Time", 
+
+      "frame.time_utc": "Dec 31, 2024 07:26:25.890970000 UTC", 
+
+      "frame.number": "5", 
+
+      "frame.len": "688" 
+
+    }, 
+
+    "wlan": { 
+
+      "wlan.fc.type_subtype": "0x0002", 
+
+      "wlan.fc": "0x8000", 
+
+      "wlan.fc_tree": { 
+
+        "wlan.fc.version": "0", 
+
+        "wlan.fc.type": "0", 
+
+        "wlan.fc.subtype": "2", 
+
+        "wlan.flags": "0x00", 
+
+        "wlan.flags_tree": { 
+
+          "wlan.fc.ds": "0x00", 
+
+          "wlan.fc.tods": "0", 
+
+          "wlan.fc.fromds": "0", 
+
+          "wlan.fc.frag": "0", 
+
+          "wlan.fc.retry": "0", 
+
+          "wlan.fc.pwrmgt": "0", 
+
+          "wlan.fc.moredata": "0", 
+
+          "wlan.fc.protected": "0", 
+
+          "wlan.fc.order": "0" 
+
+        } 
+
+      } 
+
+    } 
+
+  } 
+
+} 
+
+{ 
+
+  "layers": { 
+
+    "frame": { 
+
+      "frame.time": "Dec 31, 2024 12:57:25.890970000 India Standard Time", 
+
+      "frame.time_utc": "Dec 31, 2024 07:27:25.890970000 UTC", 
+
+      "frame.number": "6", 
+
+      "frame.len": "683" 
+
+    }, 
+
+    "wlan": { 
+
+      "wlan.fc.type_subtype": "0x0001", 
+
+      "wlan.fc": "0x8000", 
+
+      "wlan.fc_tree": { 
+
+        "wlan.fc.version": "0", 
+
+        "wlan.fc.type": "0", 
+
+        "wlan.fc.subtype": "1", 
+
+        "wlan.flags": "0x00", 
+
+        "wlan.flags_tree": { 
+
+          "wlan.fc.ds": "0x00", 
+
+          "wlan.fc.tods": "0", 
+
+          "wlan.fc.fromds": "0", 
+
+          "wlan.fc.frag": "0", 
+
+          "wlan.fc.retry": "0", 
+
+          "wlan.fc.pwrmgt": "0", 
+
+          "wlan.fc.moredata": "0", 
+
+          "wlan.fc.protected": "0", 
+
+          "wlan.fc.order": "0" 
+
+        } 
+
+      } 
+
+    } 
+
+  } 
+
+} 
+
+{ 
+
+  "layers": { 
+
+    "frame": { 
+
+      "frame.time": "Dec 31, 2024 12:58:25.890970000 India Standard Time", 
+
+      "frame.time_utc": "Dec 31, 2024 07:28:25.890970000 UTC", 
+
+      "frame.number": "7", 
+
+      "frame.len": "680" 
+
+    }, 
+
+    "wlan": { 
+
+      "wlan.fc.type_subtype": "0x0007", 
+
+      "wlan.fc": "0x8000", 
+
+      "wlan.fc_tree": { 
+
+        "wlan.fc.version": "0", 
+
+        "wlan.fc.type": "0", 
+
+        "wlan.fc.subtype": "7", 
+
+        "wlan.flags": "0x00", 
+
+        "wlan.flags_tree": { 
+
+          "wlan.fc.ds": "0x00", 
+
+          "wlan.fc.tods": "0", 
+
+          "wlan.fc.fromds": "0", 
+
+          "wlan.fc.frag": "0", 
+
+          "wlan.fc.retry": "0", 
+
+          "wlan.fc.pwrmgt": "0", 
+
+          "wlan.fc.moredata": "0", 
+
+          "wlan.fc.protected": "0", 
+
+          "wlan.fc.order": "0" 
+
+        } 
+
+      } 
+
+    } 
+
+  } 
+
+} 
+
+{ 
+
+  "layers": { 
+
+    "frame": { 
+
+      "frame.time": "Dec 31, 2024 12:59:25.890970000 India Standard Time", 
+
+      "frame.time_utc": "Dec 31, 2024 07:29:25.890970000 UTC", 
+
+      "frame.number": "8", 
+
+      "frame.len": "695" 
+
+    }, 
+
+    "wlan": { 
+
+      "wlan.fc.type_subtype": "0x0008", 
+
+      "wlan.fc": "0x8000", 
+
+      "wlan.fc_tree": { 
+
+        "wlan.fc.version": "0", 
+
+        "wlan.fc.type": "0", 
+
+        "wlan.fc.subtype": "8", 
+
+        "wlan.flags": "0x00", 
+
+        "wlan.flags_tree": { 
+
+          "wlan.fc.ds": "0x00", 
+
+          "wlan.fc.tods": "0", 
+
+          "wlan.fc.fromds": "0", 
+
+          "wlan.fc.frag": "0", 
+
+          "wlan.fc.retry": "0", 
+
+          "wlan.fc.pwrmgt": "0", 
+
+          "wlan.fc.moredata": "0", 
+
+          "wlan.fc.protected": "0", 
+
+          "wlan.fc.order": "0" 
+
+        } 
+
+      } 
+
+    } 
+
+  } 
+
+} 
+
+{ 
+
+  "layers": { 
+
+    "frame": { 
+
+      "frame.time": "Dec 31, 2024 13:00:25.890970000 India Standard Time", 
+
+      "frame.time_utc": "Dec 31, 2024 07:30:25.890970000 UTC", 
+
+      "frame.number": "9", 
+
+      "frame.len": "682" 
+
+    }, 
+
+    "wlan": { 
+
+      "wlan.fc.type_subtype": "0x0005", 
+
+      "wlan.fc": "0x8000", 
+
+      "wlan.fc_tree": { 
+
+        "wlan.fc.version": "0", 
+
+        "wlan.fc.type": "0", 
+
+        "wlan.fc.subtype": "5", 
+
+        "wlan.flags": "0x00", 
+
+        "wlan.flags_tree": { 
+
+          "wlan.fc.ds": "0x00", 
+
+          "wlan.fc.tods": "0", 
+
+          "wlan.fc.fromds": "0", 
+
+          "wlan.fc.frag": "0", 
+
+          "wlan.fc.retry": "0", 
+
+          "wlan.fc.pwrmgt": "0", 
+
+          "wlan.fc.moredata": "0", 
+
+          "wlan.fc.protected": "0", 
+
+          "wlan.fc.order": "0" 
+
+        } 
+
+      } 
+
+    } 
+
+  } 
+
+} 
+
+{ 
+
+  "layers": { 
+
+    "frame": { 
+
+      "frame.time": "Dec 31, 2024 13:01:25.890970000 India Standard Time", 
+
+      "frame.time_utc": "Dec 31, 2024 07:31:25.890970000 UTC", 
+
+      "frame.number": "10", 
+
+      "frame.len": "687" 
+
+    }, 
+
+    "wlan": { 
+
+      "wlan.fc.type_subtype": "0x0002", 
+
+      "wlan.fc": "0x8000", 
+
+      "wlan.fc_tree": { 
+
+        "wlan.fc.version": "0", 
+
+        "wlan.fc.type": "0", 
+
+        "wlan.fc.subtype": "2", 
+
+        "wlan.flags": "0x00", 
+
+        "wlan.flags_tree": { 
+
+          "wlan.fc.ds": "0x00", 
+
+          "wlan.fc.tods": "0", 
+
+          "wlan.fc.fromds": "0", 
+
+          "wlan.fc.frag": "0", 
+
+          "wlan.fc.retry": "0", 
+
+          "wlan.fc.pwrmgt": "0", 
+
+          "wlan.fc.moredata": "0", 
+
+          "wlan.fc.protected": "0", 
+
+          "wlan.fc.order": "0" 
+
+        } 
+
+      } 
+
+    } 
+
+  } 
+
+} 
+
+{ 
+
+  "layers": { 
+
+    "frame": { 
+
+      "frame.time": "Dec 31, 2024 13:02:25.890970000 India Standard Time", 
+
+      "frame.time_utc": "Dec 31, 2024 07:32:25.890970000 UTC", 
+
+      "frame.number": "11", 
+
+      "frame.len": "690" 
+
+    }, 
+
+    "wlan": { 
+
+      "wlan.fc.type_subtype": "0x0007", 
+
+      "wlan.fc": "0x8000", 
+
+      "wlan.fc_tree": { 
+
+        "wlan.fc.version": "0", 
+
+        "wlan.fc.type": "0", 
+
+        "wlan.fc.subtype": "7", 
+
+        "wlan.flags": "0x00", 
+
+        "wlan.flags_tree": { 
+
+          "wlan.fc.ds": "0x00", 
+
+          "wlan.fc.tods": "0", 
+
+          "wlan.fc.fromds": "0", 
+
+          "wlan.fc.frag": "0", 
+
+          "wlan.fc.retry": "0", 
+
+          "wlan.fc.pwrmgt": "0", 
+
+          "wlan.fc.moredata": "0", 
+
+          "wlan.fc.protected": "0", 
+
+          "wlan.fc.order": "0" 
+
+        } 
+
+      } 
+
+    } 
+
+  } 
+
+} 
+
+{ 
+
+  "layers": { 
+
+    "frame": { 
+
+      "frame.time": "Dec 31, 2024 13:03:25.890970000 India Standard Time", 
+
+      "frame.time_utc": "Dec 31, 2024 07:33:25.890970000 UTC", 
+
+      "frame.number": "12", 
+
+      "frame.len": "680" 
+
+    }, 
+
+    "wlan": { 
+
+      "wlan.fc.type_subtype": "0x0001", 
+
+      "wlan.fc": "0x8000", 
+
+      "wlan.fc_tree": { 
+
+        "wlan.fc.version": "0", 
+
+        "wlan.fc.type": "0", 
+
+        "wlan.fc.subtype": "1", 
+
+        "wlan.flags": "0x00", 
+
+        "wlan.flags_tree": { 
+
+          "wlan.fc.ds": "0x00", 
+
+          "wlan.fc.tods": "0", 
+
+          "wlan.fc.fromds": "0", 
+
+          "wlan.fc.frag": "0", 
+
+          "wlan.fc.retry": "0", 
+
+          "wlan.fc.pwrmgt": "0", 
+
+          "wlan.fc.moredata": "0", 
+
+          "wlan.fc.protected": "0", 
+
+          "wlan.fc.order": "0" 
+
+        } 
+
+      } 
+
+    } 
+
+  } 
+
+} 
+
+{ 
+
+  "layers": { 
+
+    "frame": { 
+
+      "frame.time": "Dec 31, 2024 13:04:25.890970000 India Standard Time", 
+
+      "frame.time_utc": "Dec 31, 2024 07:34:25.890970000 UTC", 
+
+      "frame.number": "13", 
+
+      "frame.len": "693" 
+
+    }, 
+
+    "wlan": { 
+
+      "wlan.fc.type_subtype": "0x0006", 
+
+      "wlan.fc": "0x8000", 
+
+      "wlan.fc_tree": { 
+
+        "wlan.fc.version": "0", 
+
+        "wlan.fc.type": "0", 
+
+        "wlan.fc.subtype": "6", 
+
+        "wlan.flags": "0x00", 
+
+        "wlan.flags_tree": { 
+
+          "wlan.fc.ds": "0x00", 
+
+          "wlan.fc.tods": "0", 
+
+          "wlan.fc.fromds": "0", 
+
+          "wlan.fc.frag": "0", 
+
+          "wlan.fc.retry": "0", 
+
+          "wlan.fc.pwrmgt": "0", 
+
+          "wlan.fc.moredata": "0", 
+
+          "wlan.fc.protected": "0", 
+
+          "wlan.fc.order": "0" 
+
+        } 
+
+      } 
+
+    } 
+
+  } 
+
+} 
+
+{ 
+
+  "layers": { 
+
+    "frame": { 
+
+      "frame.time": "Dec 31, 2024 13:05:25.890970000 India Standard Time", 
+
+      "frame.time_utc": "Dec 31, 2024 07:35:25.890970000 UTC", 
+
+      "frame.number": "14", 
+
+      "frame.len": "688" 
+
+    }, 
+
+    "wlan": { 
+
+      "wlan.fc.type_subtype": "0x0004", 
+
+      "wlan.fc": "0x8000", 
+
+      "wlan.fc_tree": { 
+
+        "wlan.fc.version": "0", 
+
+        "wlan.fc.type": "0", 
+
+        "wlan.fc.subtype": "4", 
+
+        "wlan.flags": "0x00", 
+
+        "wlan.flags_tree": { 
+
+          "wlan.fc.ds": "0x00", 
+
+          "wlan.fc.tods": "0", 
+
+          "wlan.fc.fromds": "0", 
+
+          "wlan.fc.frag": "0", 
+
+          "wlan.fc.retry": "0", 
+
+          "wlan.fc.pwrmgt": "0", 
+
+          "wlan.fc.moredata": "0", 
+
+          "wlan.fc.protected": "0", 
+
+          "wlan.fc.order": "0" 
+
+        } 
+
+      } 
+
+    } 
+
+  } 
+
+} 
+
+{ 
+
+  "layers": { 
+
+    "frame": { 
+
+      "frame.time": "Dec 31, 2024 13:06:25.890970000 India Standard Time", 
+
+      "frame.time_utc": "Dec 31, 2024 07:36:25.890970000 UTC", 
+
+      "frame.number": "15", 
+
+      "frame.len": "692" 
+
+    }, 
+
+    "wlan": { 
+
+      "wlan.fc.type_subtype": "0x0008", 
+
+      "wlan.fc": "0x8000", 
+
+      "wlan.fc_tree": { 
+
+        "wlan.fc.version": "0", 
+
+        "wlan.fc.type": "0", 
+
+        "wlan.fc.subtype": "8", 
+
+        "wlan.flags": "0x00", 
+
+        "wlan.flags_tree": { 
+
+          "wlan.fc.ds": "0x00", 
+
+          "wlan.fc.tods": "0", 
+
+          "wlan.fc.fromds": "0", 
+
+          "wlan.fc.frag": "0", 
+
+          "wlan.fc.retry": "0", 
+
+          "wlan.fc.pwrmgt": "0", 
+
+          "wlan.fc.moredata": "0", 
+
+          "wlan.fc.protected": "0", 
+
+          "wlan.fc.order": "0" 
+
+        } 
+
+      } 
+
+    } 
+
+  } 
+
+} 
+
+{ 
+
+  "layers": { 
+
+    "frame": { 
+
+      "frame.time": "Dec 31, 2024 13:07:25.890970000 India Standard Time", 
+
+      "frame.time_utc": "Dec 31, 2024 07:37:25.890970000 UTC", 
+
+      "frame.number": "16", 
+
+      "frame.len": "689" 
+
+    }, 
+
+    "wlan": { 
+
+      "wlan.fc.type_subtype": "0x0003", 
+
+      "wlan.fc": "0x8000", 
+
+      "wlan.fc_tree": { 
+
+        "wlan.fc.version": "0", 
+
+        "wlan.fc.type": "0", 
+
+        "wlan.fc.subtype": "3", 
+
+        "wlan.flags": "0x00", 
+
+        "wlan.flags_tree": { 
+
+          "wlan.fc.ds": "0x00", 
+
+          "wlan.fc.tods": "0", 
+
+          "wlan.fc.fromds": "0", 
+
+          "wlan.fc.frag": "0", 
+
+          "wlan.fc.retry": "0", 
+
+          "wlan.fc.pwrmgt": "0", 
+
+          "wlan.fc.moredata": "0", 
+
+          "wlan.fc.protected": "0", 
+
+          "wlan.fc.order": "0" 
+
+        } 
+
+      } 
+
+    } 
+
+  } 
+
+} 
+
+{ 
+
+  "layers": { 
+
+    "frame": { 
+
+      "frame.time": "Dec 31, 2024 13:08:25.890970000 India Standard Time", 
+
+      "frame.time_utc": "Dec 31, 2024 07:38:25.890970000 UTC", 
+
+      "frame.number": "17", 
+
+      "frame.len": "690" 
+
+    }, 
+
+    "wlan": { 
+
+      "wlan.fc.type_subtype": "0x0009", 
+
+      "wlan.fc": "0x8000", 
+
+      "wlan.fc_tree": { 
+
+        "wlan.fc.version": "0", 
+
+        "wlan.fc.type": "0", 
+
+        "wlan.fc.subtype": "9", 
+
+        "wlan.flags": "0x00", 
+
+        "wlan.flags_tree": { 
+
+          "wlan.fc.ds": "0x00", 
+
+          "wlan.fc.tods": "0", 
+
+          "wlan.fc.fromds": "0", 
+
+          "wlan.fc.frag": "0", 
+
+          "wlan.fc.retry": "0", 
+
+          "wlan.fc.pwrmgt": "0", 
+
+          "wlan.fc.moredata": "0", 
+
+          "wlan.fc.protected": "0", 
+
+          "wlan.fc.order": "0" 
+
+        } 
+
+      } 
+
+    } 
+
+  } 
+
+} 
+
+{ 
+
+  "layers": { 
+
+    "frame": { 
+
+      "frame.time": "Dec 31, 2024 13:09:25.890970000 India Standard Time", 
+
+      "frame.time_utc": "Dec 31, 2024 07:39:25.890970000 UTC", 
+
+      "frame.number": "18", 
+
+      "frame.len": "688" 
+
+    }, 
+
+    "wlan": { 
+
+      "wlan.fc.type_subtype": "0x0005", 
+
+      "wlan.fc": "0x8000", 
+
+      "wlan.fc_tree": { 
+
+        "wlan.fc.version": "0", 
+
+        "wlan.fc.type": "0", 
+
+        "wlan.fc.subtype": "5", 
+
+        "wlan.flags": "0x00", 
+
+        "wlan.flags_tree": { 
+
+          "wlan.fc.ds": "0x00", 
+
+          "wlan.fc.tods": "0", 
+
+          "wlan.fc.fromds": "0", 
+
+          "wlan.fc.frag": "0", 
+
+          "wlan.fc.retry": "0", 
+
+          "wlan.fc.pwrmgt": "0", 
+
+          "wlan.fc.moredata": "0", 
+
+          "wlan.fc.protected": "0", 
+
+          "wlan.fc.order": "0" 
+
+        } 
+
+      } 
+
+    } 
+
+  } 
+
+} 
+
+{ 
+
+  "layers": { 
+
+    "frame": { 
+
+      "frame.time": "Dec 31, 2024 13:10:25.890970000 India Standard Time", 
+
+      "frame.time_utc": "Dec 31, 2024 07:40:25.890970000 UTC", 
+
+      "frame.number": "19", 
+
+      "frame.len": "682" 
+
+    }, 
+
+    "wlan": { 
+
+      "wlan.fc.type_subtype": "0x0002", 
+
+      "wlan.fc": "0x8000", 
+
+      "wlan.fc_tree": { 
+
+        "wlan.fc.version": "0", 
+
+        "wlan.fc.type": "0", 
+
+        "wlan.fc.subtype": "2", 
+
+        "wlan.flags": "0x00", 
+
+        "wlan.flags_tree": { 
+
+          "wlan.fc.ds": "0x00", 
+
+          "wlan.fc.tods": "0", 
+
+          "wlan.fc.fromds": "0", 
+
+          "wlan.fc.frag": "0", 
+
+          "wlan.fc.retry": "0", 
+
+          "wlan.fc.pwrmgt": "0", 
+
+          "wlan.fc.moredata": "0", 
+
+          "wlan.fc.protected": "0", 
+
+          "wlan.fc.order": "0" 
+
+        } 
+
+      } 
+
+    } 
+
+  } 
+
+} 
+
+{ 
+
+  "layers": { 
+
+    "frame": { 
+
+      "frame.time": "Dec 31, 2024 13:11:25.890970000 India Standard Time", 
+
+      "frame.time_utc": "Dec 31, 2024 07:41:25.890970000 UTC", 
+
+      "frame.number": "20", 
+
+      "frame.len": "690" 
+
+    }, 
+
+    "wlan": { 
+
+      "wlan.fc.type_subtype": "0x0007", 
+
+      "wlan.fc": "0x8000", 
+
+      "wlan.fc_tree": { 
+
+        "wlan.fc.version": "0", 
+
+        "wlan.fc.type": "0", 
+
+        "wlan.fc.subtype": "7", 
+
+        "wlan.flags": "0x00", 
+
+        "wlan.flags_tree": { 
+
+          "wlan.fc.ds": "0x00", 
+
+          "wlan.fc.tods": "0", 
+
+          "wlan.fc.fromds": "0", 
+
+          "wlan.fc.frag": "0", 
+
+          "wlan.fc.retry": "0", 
+
+          "wlan.fc.pwrmgt": "0", 
+
+          "wlan.fc.moredata": "0", 
+
+          "wlan.fc.protected": "0", 
+
+          "wlan.fc.order": "0" 
+
+        } 
+
+      } 
+
+    } 
+
+  } 
+
+} 
