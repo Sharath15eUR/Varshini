@@ -1,0 +1,15 @@
+total 48
+drwxrwxr-x 2 varshini varshini 4096 Feb  1 19:31 backup
+drwxrwxr-x 2 varshini varshini 4096 Feb  1 13:34 dir0
+drwxrwxr-x 3 varshini varshini 4096 Feb  1 13:31 dir1
+drwxrwxr-x 2 root     varshini 4096 Feb  1 13:33 dir2
+drwxrwxr-x 2 varshini varshini 4096 Feb  1 13:36 dir3
+-rw-rw-r-- 1 varshini varshini  100 Feb  1 15:17 dirlist.txt
+lrwxrwxrwx 1 varshini varshini    9 Feb  1 14:55 file1_link -> file1.txt
+-rwxrwxrwx 1 varshini varshini   40 Feb  1 13:35 file1.txt
+-rw-rw-r-- 1 varshini varshini   46 Feb  1 15:33 infinite.sh
+-rw-rw-r-- 1 varshini varshini  250 Feb  1 14:32 linux_file
+-rw-rw-r-- 1 varshini varshini    0 Feb  1 19:36 list.txt
+-rwx------ 1 varshini varshini   83 Feb  1 15:18 newfile.txt
+-rw-rw-r-- 1 varshini varshini  128 Feb  1 19:25 recent_files.txt
+-rw-rw-r-- 1 varshini varshini  134 Feb  1 19:35 updated_recent_files.txt

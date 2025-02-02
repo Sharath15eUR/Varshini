@@ -1,0 +1,10 @@
+dir0
+dir1
+dir2
+dir3
+dirlist.txt
+file1_link
+file1.txt
+linux_file
+newfile.txt
+/home/varshini/Learning

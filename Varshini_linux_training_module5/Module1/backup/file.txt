@@ -1,0 +1,2 @@
+I'm the file inside the nested directories within the directoty 3.
+Bye Bye !

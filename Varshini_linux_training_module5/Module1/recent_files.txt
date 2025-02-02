@@ -1,0 +1,8 @@
+./linux_file
+./newfile.txt
+./dirlist.txt
+./dir3/file.txt
+./file1.txt
+./infinite.sh
+./recent_files.txt
+./dir1/dir2/dir3/file.txt

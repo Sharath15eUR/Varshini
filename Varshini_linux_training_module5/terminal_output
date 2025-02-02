@@ -1,0 +1,70 @@
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module5$ ls *
+file_analyzer.sh
+
+Module1:
+backup               dir0  dir3          dir.zip     infinite.sh  merged_dir.txt  ping_error.txt
+backup.tar.gz        dir1  dirfiles.txt  file1_link  linux_file   net.pcap        recent_files.txt
+cleaned_newfile.txt  dir2  dirlist.txt   file1.txt   list.txt     newfile.txt     updated_recent_files.txt
+
+
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module5$ chmod u+x file_analyzer.sh
+
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module5$ ./file_analyzer.sh
+Error: Keyword must not be empty.
+
+
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module5$ ./file_analyzer.sh -d Mod1 -k dir
+Error: Directory 'Mod1' does not exist.
+
+# RECURSIVE DIRECTORY SEARCH
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module5$ ./file_analyzer.sh -d Module1 -k dir
+Searching for keyword 'dir' recursively in directory: Module1
+Found keyword 'dir' in file: Module1/backup/backup.tar.gz
+Found keyword 'dir' in file: Module1/backup/dirlist.txt
+Found keyword 'dir' in file: Module1/backup/file1.txt
+Found keyword 'dir' in file: Module1/backup/file.txt
+Keyword 'dir' not found in file: Module1/backup/newfile.txt
+...
+Script executed with the following parameters:
+Directory: Module1
+Keyword: dir
+File: Module1/updated_recent_files.txt
+Exit status: 0
+
+# FILE SEARCH
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module5$ ./file_analyzer.sh -f ./Module1/newfile.txt -k Ten
+Found keyword 'Ten' in file: ./Module1/newfile.txt
+Script executed with the following parameters:
+Directory: 
+Keyword: Ten
+File: ./Module1/newfile.txt
+Exit status: 0
+
+# HELP MENU
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module5$ ./file_analyzer.sh --help
+./file_analyzer.sh: illegal option -- -
+Usage: ./file_analyzer.sh [options]
+
+Options:
+  -d <directory>  Directory to search recursively.
+  -k <keyword>    Keyword to search in files.
+  -f <file>       File to search directly.
+  --help          Display this help menu.
+  
+ 
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module5$ ./file_analyzer.sh -l Mod1
+./file_analyzer.sh: illegal option -- l
+Usage: ./file_analyzer.sh [options]
+
+Options:
+  -d <directory>  Directory to search recursively.
+  -k <keyword>    Keyword to search in files.
+  -f <file>       File to search directly.
+  --help          Display this help menu.
+
+# ERROR LOG
+varshini@varshini:~/Linux/Varshini/Varshini_linux_training_module5$ cat errors.log
+Error: Keyword must not be empty.
+Error: Directory 'Mod1' does not exist.
+
+
