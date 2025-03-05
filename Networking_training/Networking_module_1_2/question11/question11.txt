@@ -1,0 +1,37 @@
+Using a terminal, connect to a remote machine via SSH and telnet
+
+a) SSH (Secure Shell)
+
+SSH is a secure way to access and manage a remote machine over a network. To connect to a remote machine via SSH:
+
+	-Open the terminal on your Ubuntu machine.
+      	-Use the SSH command:
+		ssh username@<hostname_or_ip_address>
+
+		Eg: varshini@198.168.1.100
+
+    	-Password prompt:
+        	After executing the command, you'll be prompted to enter the password for the remote user account.
+        	Once authenticated, you will be logged into the remote machine's terminal.
+
+    	-Exit SSH session:
+        	To exit the SSH session, simply type exit and press Enter.
+
+b) Telnet
+
+Telnet is an older, less secure protocol used to access remote machines, but it’s still sometimes used in specific cases for legacy systems.
+
+	-Open the terminal on your Ubuntu machine.
+      	-Use the Telnet command:
+		telnet hostname_or_ip_address
+
+		Eg: telnet 192.168.1.100
+
+    	-Login:
+        	Telnet will attempt to connect to the specified machine. You will be prompted to enter your username and password.
+
+    	-Exit Telnet session:
+        	To exit the Telnet session, type exit and then type quit.
+
+	
+

@@ -1,0 +1,12 @@
+varshini@varshini:~/Linux/Varshini/Networking_training/Networking_module_1_2/question2$ sudo systemctl start ssh
+
+varshini@varshini:~/Linux/Varshini/Networking_training/Networking_module_1_2/question2$ sftp varshini@localhost
+varshini@localhost's password: 
+Connected to localhost.
+sftp> put local_file.txt remote_file.txt
+Uploading local_file.txt to /home/varshini/remote_file.txt
+local_file.txt                                                                    100%    0     0.0KB/s   00:00    
+sftp> get remote_file.txt
+Fetching /home/varshini/remote_file.txt to remote_file.txt
+sftp> quit
+

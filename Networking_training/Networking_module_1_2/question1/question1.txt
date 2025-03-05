@@ -1,0 +1,40 @@
+# SOURCE DIRECTORY
+varshini@varshini:~/Linux/Varshini/Networking_training/Networking_module_1_2/question1$ ls -l ./source
+total 0
+-rw-rw-r-- 1 varshini varshini 0 Mar  4 23:15 file1
+-rw-rw-r-- 1 varshini varshini 0 Mar  4 23:15 file2
+
+
+# USING CP
+varshini@varshini:~/Linux/Varshini/Networking_training/Networking_module_1_2/question1$ cp -r ./source ./cp_destination
+
+varshini@varshini:~/Linux/Varshini/Networking_training/Networking_module_1_2/question1$ ls -l cp_destination
+total 4
+drwxrwxr-x 2 varshini varshini 4096 Mar  4 23:15 source
+
+varshini@varshini:~/Linux/Varshini/Networking_training/Networking_module_1_2/question1$ ls -l cp_destination/source
+total 0
+-rw-rw-r-- 1 varshini varshini 0 Mar  4 23:15 file1
+-rw-rw-r-- 1 varshini varshini 0 Mar  4 23:15 file2
+
+
+# USING SCP
+varshini@varshini:~/Linux/Varshini/Networking_training/Networking_module_1_2/question1$ sudo systemctl status ssh
+● ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/usr/lib/systemd/system/ssh.service; enabled; preset: enabled)
+     Active: active (running) since Tue 2025-03-04 22:58:25 IST; 17min ago
+     
+varshini@varshini:~/Linux/Varshini/Networking_training/Networking_module_1_2/question1$ scp -r ./source varshini@localhost:/home/varshini/Linux/Varshini/Networking_training/Networking_module_1_2/question1/scp_destination
+varshini@localhost's password: 
+file2                                                                             100%    0     0.0KB/s   00:00    
+file1                                                                             100%    0     0.0KB/s   00:00    
+
+varshini@varshini:~/Linux/Varshini/Networking_training/Networking_module_1_2/question1$ ls -l scp_destination
+total 4
+drwxrwxr-x 2 varshini varshini 4096 Mar  4 23:17 source
+
+varshini@varshini:~/Linux/Varshini/Networking_training/Networking_module_1_2/question1$ ls -l scp_destination/sourcetotal 0
+-rw-rw-r-- 1 varshini varshini 0 Mar  4 23:17 file1
+-rw-rw-r-- 1 varshini varshini 0 Mar  4 23:17 file2
+
+

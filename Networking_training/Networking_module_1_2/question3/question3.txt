@@ -1,0 +1,19 @@
+# WIRESHARK CAPTURE
+varshini@varshini:~/Linux/Varshini/Networking_training/Networking_module_1_2/question3$ sudo wireshark
+ ** (wireshark:13994) 00:32:40.408112 [GUI WARNING] -- QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+ ** (wireshark:13994) 00:34:02.288914 [Capture MESSAGE] -- Capture Start ...
+ ** (wireshark:13994) 00:34:02.347043 [Capture MESSAGE] -- Capture started
+ ** (wireshark:13994) 00:34:02.347124 [Capture MESSAGE] -- File: "/tmp/wireshark_enp0s3M2BR22.pcapng"
+ ** (wireshark:13994) 00:34:19.197174 [Capture MESSAGE] -- Capture Stop ...
+ ** (wireshark:13994) 00:34:19.207000 [Capture MESSAGE] -- Capture stopped.
+ ** (wireshark:13994) 00:34:19.207299 [Capture WARNING] ./ui/capture.c:722 -- capture_input_closed(): 
+
+
+# TCPDUMP CAPTURE
+varshini@varshini:~/Linux/Varshini/Networking_training/Networking_module_1_2/question3$ sudo tcpdump -i enp0s3 -w capture.pcap
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+^C6 packets captured
+6 packets received by filter
+0 packets dropped by kernel
+
+

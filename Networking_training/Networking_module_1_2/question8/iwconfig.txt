@@ -1,0 +1,5 @@
+varshini@varshini:~/Linux/Varshini/Networking_training/Networking_module_1_2/question8$ iwconfig
+lo        no wireless extensions.
+
+enp0s3    no wireless extensions.
+

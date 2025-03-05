@@ -1,0 +1,10 @@
+### What Happens When Duplicate IPs Are Configured in a Network? ###
+
+When two devices on a network share the same IP address, it causes a duplicate IP conflict. This can lead to:
+
+    - Network instability: Both devices may lose connectivity or experience intermittent issues.
+    
+    - Routing issues: Packets may be misdirected, causing communication failure.
+    
+    - ARP problems: The ARP table becomes confused, leading to incorrect mappings. To resolve this, ensure that each device has a unique IP address, and avoid conflicts by using proper IP management.
+

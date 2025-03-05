@@ -1,0 +1,47 @@
+### How to Access Remote Systems Using VNC Viewer, AnyDesk, TeamViewer, and Remote Desktop Connections ###
+
+    - VNC: Allows remote desktop access via a server-client setup. Requires installing a VNC server on the remote system and a viewer on the local machine.
+    
+    	- Install VNC server:
+		sudo apt install xtightvncserver
+		
+	- Connect:
+		vncviewer <ip_addr>
+		
+		Eg: vncviewer 192.168.1.100
+
+
+
+    - AnyDesk: A proprietary tool that’s fast and user-friendly. Simply install AnyDesk on both systems and connect using the remote ID.
+    
+    	- Install AnyDesk:
+		sudo apt install anydesk
+
+	- Connect: Open AnyDesk, enter the remote machine ID and password.
+	
+
+
+    - TeamViewer: Another popular remote desktop tool. Install on both systems, connect using an ID and password, and gain full access to the remote machine.
+    	
+    	-Install TeamViewer:
+		sudo apt install teamviewer
+
+    	-Connect: Open TeamViewer, enter the remote machine ID and password.
+
+
+
+    - RDP (Remote Desktop Protocol): Common for Windows. For Linux, you can use xrdp to enable RDP access. Connect using a Remote Desktop client.
+    
+    	-Install xrdp:
+		sudo apt install xrdp
+		sudo systemctl enable xrdp
+		sudo systemctl start xrdp
+
+	-Connect: Use Windows Remote Desktop or an RDP client:
+		rdesktop <remote_ip>
+		
+		Eg: rdesktop 192.168.1.100
+
+
+
+

@@ -1,0 +1,15 @@
+varshini@varshini:~/Linux/Varshini/Networking_training/Networking_module_1_2/question7$ ip route show
+default via 10.0.2.2 dev enp0s3 proto dhcp src 10.0.2.15 metric 100 
+10.0.2.0/24 dev enp0s3 proto kernel scope link src 10.0.2.15 metric 100 
+varshini@varshini:~/Linux/Varshini/Networking_training/Networking_module_1_2/question7$ ping -c 5 10.0.2.2
+PING 10.0.2.2 (10.0.2.2) 56(84) bytes of data.
+64 bytes from 10.0.2.2: icmp_seq=1 ttl=255 time=0.301 ms
+64 bytes from 10.0.2.2: icmp_seq=2 ttl=255 time=0.755 ms
+64 bytes from 10.0.2.2: icmp_seq=3 ttl=255 time=0.577 ms
+64 bytes from 10.0.2.2: icmp_seq=4 ttl=255 time=0.782 ms
+64 bytes from 10.0.2.2: icmp_seq=5 ttl=255 time=0.564 ms
+
+--- 10.0.2.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4111ms
+rtt min/avg/max/mdev = 0.301/0.595/0.782/0.172 ms
+

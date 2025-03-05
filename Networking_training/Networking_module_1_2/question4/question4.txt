@@ -1,0 +1,36 @@
+# PING
+varshini@varshini:~/Linux/Varshini/Networking_training/Networking_module_1_2/question4$ ping -c 7 192.168.1.1
+PING 192.168.1.1 (192.168.1.1) 56(84) bytes of data.
+
+--- 192.168.1.1 ping statistics ---
+7 packets transmitted, 0 received, 100% packet loss, time 6170ms
+
+
+# ARP
+varshini@varshini:~/Linux/Varshini/Networking_training/Networking_module_1_2/question4$ arp -a
+_gateway (10.0.2.2) at 52:55:0a:00:02:02 [ether] on enp0s3
+? (10.0.2.3) at 52:55:0a:00:02:03 [ether] on enp0s3
+
+
+# IFCONFIG
+varshini@varshini:~/Linux/Varshini/Networking_training/Networking_module_1_2/question4$ ifconfig
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fd00::a00:27ff:fef7:af83  prefixlen 64  scopeid 0x0<global>
+        inet6 fd00::d89d:2b53:e505:670e  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::a00:27ff:fef7:af83  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:f7:af:83  txqueuelen 1000  (Ethernet)
+        RX packets 137000  bytes 178762705 (178.7 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 29375  bytes 6225350 (6.2 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 5228  bytes 550387 (550.3 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 5228  bytes 550387 (550.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+

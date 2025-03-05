@@ -1,0 +1,38 @@
+varshini@varshini:~/Linux/Varshini/Networking_training/Networking_module_1_2/question2$ sudo apt install vsftpd
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+vsftpd is already the newest version (3.0.5-0ubuntu3.1).
+0 upgraded, 0 newly installed, 0 to remove and 278 not upgraded.
+
+varshini@varshini:~/Linux/Varshini/Networking_training/Networking_module_1_2/question2$ sudo systemctl start vsftpd
+varshini@varshini:~/Linux/Varshini/Networking_training/Networking_module_1_2/question2$ sudo systemctl enable vsftpdSynchronizing state of vsftpd.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable vsftpd
+
+varshini@varshini:~/Linux/Varshini/Networking_training/Networking_module_1_2/question2$ sudo vi /etc/vsftpd.conf
+varshini@varshini:~/Linux/Varshini/Networking_training/Networking_module_1_2/question2$ sudo systemctl restart vsftpd
+
+varshini@varshini:~/Linux/Varshini/Networking_training/Networking_module_1_2/question2$ ftp localhost
+Connected to localhost.
+220 (vsFTPd 3.0.5)
+Name (localhost:varshini): varshini
+331 Please specify the password.
+Password: 
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> put local_file.txt
+local: local_file.txt remote: local_file.txt
+229 Entering Extended Passive Mode (|||10045|)
+150 Ok to send data.
+     0        0.00 KiB/s 
+226 Transfer complete.
+ftp> get local_file.txt
+local: local_file.txt remote: local_file.txt
+229 Entering Extended Passive Mode (|||10010|)
+150 Opening BINARY mode data connection for local_file.txt (0 bytes).
+     0        0.00 KiB/s 
+226 Transfer complete.
+ftp> quit
+221 Goodbye.
+

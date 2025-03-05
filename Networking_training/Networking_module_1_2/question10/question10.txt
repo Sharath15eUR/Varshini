@@ -1,0 +1,27 @@
+How a DHCP assigns IPaddress to devices in a network
+
+The Dynamic Host Configuration Protocol (DHCP) is a network management protocol used on IP networks. It allows devices to automatically receive an IP address and other related network configuration information (like subnet mask, default gateway, and DNS servers) when they connect to a network.
+
+Working:
+
+    - STEP 1: Device request (DHCPDISCOVER)
+        When a device (like your laptop or smartphone) connects to a network, it doesn’t have an IP address initially.
+        The device sends a DHCP Discover message to the network, requesting an IP address.
+
+    - STEP 2: DHCP Offer (DHCPOFFER)
+        The DHCP server on your router receives the request. It looks in its DHCP pool (range of available IP addresses) and selects an IP address that is not currently assigned.
+        The server then sends a DHCP Offer message to the device, offering it an available IP address, along with other necessary configuration data (subnet mask, gateway, DNS servers).
+
+    - STEP 3: Device request acknowledgment (DHCPREQUEST)
+        The device then sends a DHCP Request message back to the server, indicating that it accepts the offered IP address.
+
+    - STEP 4: DHCP Acknowledgment (DHCPACK)
+        The DHCP server responds with a DHCP Acknowledgment message, confirming the device’s new IP address and the other network details.
+
+Lease period:
+
+        The IP address assigned to the device is only temporary, and it is assigned for a specific time period known as the lease time.
+        After the lease expires, the device must either request a new IP address or renew the lease.
+
+	
+

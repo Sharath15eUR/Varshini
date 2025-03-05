@@ -1,0 +1,23 @@
+Log in to your home router's web interface and check the connected devices list 
+
+### HOME ROUTER NOT AVAILABLE ###
+
+Steps:
+
+    - Open a Web Browser:
+        Open your web browser(Firefox).
+
+    - Enter Router’s IP Address:
+        Type http://192.168.1.1 or http://192.168.0.1 in the browser's address bar or check the router's label for the correct IP.
+
+    - Log in to the Router:
+        Enter the admin username and password. 
+
+    - Find the Connected Devices List:
+        Once logged in, navigate to the section in the router settings that lists connected devices.
+        
+    - View the List:
+        List of all devices connected to your router will be displayed.
+
+	
+
