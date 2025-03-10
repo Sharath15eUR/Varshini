@@ -1,4 +1,4 @@
-# ADDING BRIDGE MANUALLY ( ETH0 AND ETH1 ARE ALREADY ADDED DUMMIES)
+### ADDING BRIDGE MANUALLY ( ETH0 AND ETH1 ARE ALREADY ADDED DUMMIES) ###
 
 varshini@varshini:~$ sudo ip link add name br0 type bridge
 varshini@varshini:~$ sudo ip link set dev eth0 master br0
