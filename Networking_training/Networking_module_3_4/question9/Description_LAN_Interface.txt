@@ -1,0 +1,45 @@
+### Describe how you would configure a basic LAN interface using the ip command in Linux ###
+
+The ip command is a versatile tool used to configure and manage networking on Linux systems. To configure a basic LAN interface using the ip command:
+
+
+
+1. Display Current Network Interfaces
+
+	Command: ip link show
+
+	This command lists all the network interfaces on the system (e.g., eth0, enp3s0, etc.).
+
+
+
+2. Bring the Interface Up
+
+	Command: ip link set dev eth0 up
+
+	This activates the eth0 interface.
+
+
+
+3. Assign an IP Address to the Interface
+
+	Command: ip addr add 192.168.1.16 dev eth0
+	
+	This command assigns the IP address 192.168.1.16 to the eth0 interface.
+
+
+
+4. Verify Configuration
+
+	Command: ip addr show eth0
+
+	This will display the current configuration of the eth0 interface, including its IP address.
+
+
+
+5. Bring the Interface Down
+
+	Command: ip link set dev eth0 down
+	
+	This command shuts down the interface.
+
+

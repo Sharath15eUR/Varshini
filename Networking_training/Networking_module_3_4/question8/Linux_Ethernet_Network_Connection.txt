@@ -1,0 +1,52 @@
+### Research the Linux kernel's handling of Ethernet devices and network interfaces. Write a short report on how the Linux kernel supports Ethernet communication ###
+
+The Linux kernel provides robust support for Ethernet devices and network interfaces through its networking stack, allowing for communication and data transmission over Ethernet networks. Ethernet interfaces in Linux are represented by devices, such as eth0, enp0s3, etc. These devices are managed by the kernel's network subsystem, which includes drivers, protocols, and utilities for handling networking.
+
+
+
+Ethernet Drivers: 
+	The Linux kernel includes support for various Ethernet network card drivers. Each Ethernet interface is controlled by a specific driver that enables the kernel to interact with the hardware. These drivers are part of the kernel’s network device layer (netdev), which abstracts Ethernet hardware functionality for higher-level network protocols like TCP/IP.
+
+To view active network interfaces:- 
+	Eg: ls /sys/class/net/
+
+
+
+Network Interfaces: 
+	Ethernet interfaces are logical representations of the physical hardware (NICs) on the system. The kernel interacts with these interfaces through network interface controllers (NICs) and manages packet transmission and reception.
+
+
+
+Network Stack: 
+	When an Ethernet interface receives data, the kernel's network stack processes it, applying appropriate protocols (e.g., ARP, IPv4, IPv6). For transmission, the kernel uses the MAC address of the Ethernet interface to communicate with other devices on the same local network.
+
+
+
+Configuration: 
+	Ethernet interfaces can be configured using a range of utilities like ifconfig, ip, or network management daemons. The kernel supports configuration options for IP addresses, routing, and more.
+
+Eg: 
+
+varshini@varshini:~$ ip link show
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP mode DEFAULT group default qlen 1000
+    link/ether 00:11:22:33:44:55 brd ff:ff:ff:ff:ff:ff permaddr 08:00:27:f7:af:83
+
+
+
+Networking Subsystems: 
+	Key subsystems involved in Ethernet communication include:
+
+	Link Layer: 
+		This manages the Ethernet frames that include source and destination MAC addresses.
+	
+	Network Layer: 
+		This deals with protocols like IP that manage logical addressing and routing of packets across networks.
+	
+	Transport Layer: 
+		It ensures reliable data transfer, often using protocols like TCP.
+
+
+
+

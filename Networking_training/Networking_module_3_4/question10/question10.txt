@@ -1,0 +1,74 @@
+# ADDING BRIDGE MANUALLY ( ETH0 AND ETH1 ARE ALREADY ADDED DUMMIES)
+
+varshini@varshini:~$ sudo ip link add name br0 type bridge
+varshini@varshini:~$ sudo ip link set dev eth0 master br0
+varshini@varshini:~$ sudo ip link set dev eth1 master br0
+
+varshini@varshini:~$ sudo ip link set br0 up
+varshini@varshini:~$ sudo ip link set eth0 up
+varshini@varshini:~$ sudo ip link set eth1 up
+
+varshini@varshini:~$ sudo ip link show
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP mode DEFAULT group default qlen 1000
+    link/ether 00:11:22:33:44:55 brd ff:ff:ff:ff:ff:ff permaddr 08:00:27:f7:af:83
+5: eth0: <BROADCAST,NOARP,UP,LOWER_UP> mtu 1500 qdisc noqueue master br0 state UNKNOWN mode DEFAULT group default qlen 1000
+    link/ether 9a:24:3f:df:ca:a1 brd ff:ff:ff:ff:ff:ff
+7: eth1: <BROADCAST,NOARP,UP,LOWER_UP> mtu 1500 qdisc noqueue master br0 state UNKNOWN mode DEFAULT group default qlen 1000
+    link/ether 42:2a:61:10:7a:89 brd ff:ff:ff:ff:ff:ff
+8: br0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
+    link/ether 4e:a7:9c:a0:9a:27 brd ff:ff:ff:ff:ff:ff
+
+
+
+# MAC TABLE
+
+varshini@varshini:~$ bridge fdb show
+01:00:5e:00:00:01 dev enp0s3 self permanent
+01:00:5e:00:00:fb dev enp0s3 self permanent
+33:33:00:00:00:01 dev enp0s3 self permanent
+33:33:ff:33:44:55 dev enp0s3 self permanent
+33:33:ff:8e:65:0a dev enp0s3 self permanent
+33:33:00:00:00:fb dev enp0s3 self permanent
+9a:24:3f:df:ca:a1 dev eth0 vlan 1 master br0 permanent
+9a:24:3f:df:ca:a1 dev eth0 master br0 permanent
+33:33:00:00:00:01 dev eth0 self permanent
+01:00:5e:00:00:01 dev eth0 self permanent
+42:2a:61:10:7a:89 dev eth1 vlan 1 master br0 permanent
+42:2a:61:10:7a:89 dev eth1 master br0 permanent
+33:33:00:00:00:01 dev eth1 self permanent
+01:00:5e:00:00:01 dev eth1 self permanent
+33:33:00:00:00:01 dev br0 self permanent
+01:00:5e:00:00:6a dev br0 self permanent
+33:33:00:00:00:6a dev br0 self permanent
+01:00:5e:00:00:01 dev br0 self permanent
+33:33:ff:a0:9a:27 dev br0 self permanent
+33:33:00:00:00:fb dev br0 self permanent
+4e:a7:9c:a0:9a:27 dev br0 vlan 1 master br0 permanent
+4e:a7:9c:a0:9a:27 dev br0 master br0 permanent
+
+
+
+# PING REQUESTS
+
+varshini@varshini:~$ ping -c 3 192.168.1.16
+PING 192.168.1.16 (192.168.1.16) 56(84) bytes of data.
+64 bytes from 192.168.1.16: icmp_seq=1 ttl=64 time=0.042 ms
+64 bytes from 192.168.1.16: icmp_seq=2 ttl=64 time=0.027 ms
+64 bytes from 192.168.1.16: icmp_seq=3 ttl=64 time=0.038 ms
+
+--- 192.168.1.16 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2076ms
+rtt min/avg/max/mdev = 0.027/0.035/0.042/0.006 ms
+
+varshini@varshini:~$ ping -c 3 192.168.1.17
+PING 192.168.1.17 (192.168.1.17) 56(84) bytes of data.
+64 bytes from 192.168.1.17: icmp_seq=1 ttl=64 time=0.038 ms
+64 bytes from 192.168.1.17: icmp_seq=2 ttl=64 time=0.041 ms
+64 bytes from 192.168.1.17: icmp_seq=3 ttl=64 time=0.039 ms
+
+--- 192.168.1.17 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2063ms
+rtt min/avg/max/mdev = 0.038/0.039/0.041/0.001 ms
+

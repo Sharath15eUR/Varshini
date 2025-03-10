@@ -1,0 +1,108 @@
+### Summary of Findings and Observations ###
+
+
+
+1. Simulated Network with Switches and Devices
+
+
+- Setup: A small network was simulated using Packet Tracer, consisting of two devices (PCs) connected via a switch0 and a similar network with switch1 connected together via a cable.
+
+- Traffic Generation: The `ping` command was used to generate network traffic between the two devices.
+
+- MAC Address Table Observation: The switch dynamically updated its MAC address table as devices communicated. The table associates MAC addresses with specific ports, which the switch uses to forward frames efficiently.
+
+
+
+2. Capturing and Analyzing Ethernet Frames with Wireshark
+
+
+- Frame Structure: The Wireshark capture revealed important details about Ethernet frames:
+    - Destination MAC Address: Identifies the receiving device’s MAC address.
+
+    - Source MAC Address: The sender’s MAC address.
+
+    - Ethertype: Indicates the protocol type, e.g., `0x0800` for IPv4.
+
+    - Payload: Contains the data being transmitted (ICMP for ping).
+
+    - FCS (Frame Check Sequence): Used for error detection in Ethernet frames.
+
+
+
+3. Configuring Static IPs and Modifying MAC Addresses
+
+
+- IP Configuration: Static IP addresses were configured using `ifconfig` and `ip` commands, 
+	e.g., sudo ifconfig enp0s3 192.168.1.10 netmask 255.255.255.0 up
+
+- MAC Address Modification: The MAC address was changed with the `ifconfig` command,
+	eg., sudo ifconfig enp0s3 hw ether 00:11:22:33:44:55
+- Connectivity Testing: `ping` was used to verify network connectivity, ensuring that both devices could reach each other.
+
+
+
+4. Troubleshooting Ethernet Communication
+
+
+- Ping and Traceroute/Tracert/Tracepath:
+    - Ping: Initially used to check connectivity between devices.
+
+    - Traceroute/Tracert/Tracepath: Used when ping failed, allowing the identification of where packets were being dropped 
+
+
+
+5. LAN Setup with Two Linux Machines
+
+
+- Network Setup: A simple LAN was set up with two Linux-based machines connected via a switch.
+
+- Ping Testing: The `ping` command was used to check connectivity between the Linux machines.
+
+
+
+6. Ping and ifconfig/ipconfig
+
+
+- Ping: Initially used to check connectivity between devices.
+
+- Ifconfig/Ipconfig: Used to check the IP configuration of the devices.
+
+
+
+7. Traceroute/Tracert/Tracepath for Identifying Packet Loss
+
+
+- Traceroute/Tracert/Tracepath: When ping failed, `traceroute/traert/tracepath` helped identify the location where packets were getting dropped.
+
+
+
+8. Linux Kernel Handling of Ethernet Communication
+
+
+- Ethernet Device Handling: The Linux kernel uses network drivers to manage Ethernet devices, handling tasks like receiving and sending frames, network buffering, and routing. The kernel’s networking stack supports Ethernet at the data link layer and enables communication with higher layers (IP, TCP).
+
+
+
+9. Configuring LAN Interface with `ip` Command
+
+
+- Configuration: The `ip` command was used to configure and manage the network interface:
+    - Assigning IP addresses, bringing interfaces up, and viewing the status.
+
+    - Example: sudo ip link add eth0 type dummy
+	       sudo ip link set eth0 up
+	       sudo ip addr add 192.168.1.16 dev eth0
+	       ip link show
+
+
+
+10. Viewing MAC Address Table on Linux-based Switch
+
+
+- Switch Operation: On a Linux-based switch, the MAC address table can be inspected using tools like `bridge` and `ip link`:
+    - Bridge Command: `bridge fdb show` displays the MAC addresses and associated ports.
+
+    - IP Command: `ip link show` shows the MAC address of a specific network interface.
+
+    - The operation of a basic Linux-based switch was demonstrated using the `bridge` and `ip link` commands, which inspect and manage the switch's MAC address table.
+
