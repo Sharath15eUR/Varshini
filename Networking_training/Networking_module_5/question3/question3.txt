@@ -1,0 +1,24 @@
+### Manually configure static IPs on client devices and verify connectivity ###
+
+A static IP address is a fixed, manually assigned IP address that does not change over time. Unlike dynamic IPs (assigned by DHCP), a static IP remains the same until manually changed.
+
+Key Points:
+
+	- Manual Setup: Assigned manually, ensuring it stays the same.
+	- Uses: Ideal for devices needing constant access (e.g., servers, printers).
+	- Advantages: Reliable, easy remote access, and no DHCP dependency.
+	- Disadvantages: Manual configuration, limited address space, and potential IP conflicts
+
+Steps:
+
+	- Open Packet Tracer and create a small network with at least 2 Laptops and a switch.
+
+	- On Laptop1, go to Desktop > IP Configuration. Manually assign a static IP (e.g., 192.168.1.10) and subnet mask (255.255.255.0).
+
+	- Repeat the same for Laptop2, assigning a different static IP (e.g., 192.168.1.20).
+
+	- Connect the laptops to the switch using copper straight-through cables.
+
+	- On Laptop1, open the Command Prompt and type ping 192.168.1.20 to verify the connection.
+
+	- If the ping is successful, it confirms that the static IP configuration works correctly.

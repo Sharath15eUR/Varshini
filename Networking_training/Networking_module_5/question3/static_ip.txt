@@ -1,0 +1,65 @@
+### Manually configure static IPs on client devices and verify connectivity ###
+
+varshini@varshini:~$ ifconfig
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.16  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fd00::a00:27ff:fef7:af83  prefixlen 64  scopeid 0x0<global>
+        inet6 fd00::4750:f858:7e66:9e7a  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::a00:27ff:fef7:af83  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:f7:af:83  txqueuelen 1000  (Ethernet)
+        RX packets 323  bytes 323272 (323.2 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 311  bytes 31795 (31.7 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 130  bytes 12010 (12.0 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 130  bytes 12010 (12.0 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+
+# ASSIGNMENT OF STATIC IP ADDRESS
+
+varshini@varshini:~$ sudo ifconfig enp0s3 192.168.1.10 netmask 255.255.255.0 up [sudo] password for varshini:
+varshini@varshini:~$ ifconfig
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.1.10  netmask 255.255.255.0  broadcast 192.168.1.255
+        inet6 fd00::a00:27ff:fef7:af83  prefixlen 64  scopeid 0x0<global>
+        inet6 fd00::4750:f858:7e66:9e7a  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::a00:27ff:fef7:af83  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:f7:af:83  txqueuelen 1000  (Ethernet)
+        RX packets 356  bytes 326145 (326.1 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 361  bytes 37591 (37.5 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 132  bytes 12156 (12.1 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 132  bytes 12156 (12.1 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+
+# CHECKING CONNECTIVITY
+
+varshini@varshini:~$ ping -c 5 192.168.1.10
+PING 192.168.1.10 (192.168.1.10) 56(84) bytes of data.
+64 bytes from 192.168.1.10: icmp_seq=1 ttl=64 time=0.027 ms
+64 bytes from 192.168.1.10: icmp_seq=2 ttl=64 time=0.052 ms
+64 bytes from 192.168.1.10: icmp_seq=3 ttl=64 time=0.041 ms
+64 bytes from 192.168.1.10: icmp_seq=4 ttl=64 time=0.038 ms
+64 bytes from 192.168.1.10: icmp_seq=5 ttl=64 time=0.039 ms
+
+--- 192.168.1.10 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4117ms
+rtt min/avg/max/mdev = 0.027/0.039/0.052/0.008 ms
+
+
+

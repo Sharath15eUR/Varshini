@@ -1,0 +1,52 @@
+ARP SPOOFING :
+
+	ARP spoofing (also known as ARP poisoning) is an attack where an attacker sends false ARP (Address Resolution Protocol) messages to a local network. The attacker can associate their MAC address with the IP address of another device on the network (such as a router or another computer). This allows the attacker to intercept, modify, or block network traffic between devices.
+
+
+Steps:
+
+	-In Packet Tracer, create a simple network with at least two or three PCS, a switch, and a router.
+
+	-Assign static IPs
+
+		-VICTIM
+			IP ADDRESS : 192.168.1.2
+			MAC ADDRESS : 0002.4A9E.14CD
+
+		-PC
+			IP ADDRESS : 192.168.1.3
+			MAC ADDRESS : 0010.113D.4AA4
+
+		-ATTACKER
+			IP ADDRESS : 192.168.1.4
+			MAC ADDRESS : 0005.5EC3.69EE
+			
+		-ROUTER
+			IP ADDRESS : 192.168.1.1
+			MAC ADDRESS : 0000.0CA0.E45A
+
+	- Verify normal communication using ping and ARP table
+
+		- ARP TABLE
+			C:\>arp -a 
+			Internet Address 	Physical Address 	Type 
+			192.168.1.1 	 	0000.0ca0.e45a 		dynamic 
+			192.168.1.3 		0010.113d.4aa4		dynamic 
+			192.168.1.4 		0005.5ec3.69ee 		dynamic
+ 
+	- Spoofed ARP table
+
+		- ARP TABLE
+			C:\>arp -a 
+			Internet Address 	Physical Address 	Type 
+			192.168.1.1 	 	0000.0ca0.e45a 		dynamic 
+			192.168.1.3 		0005.5ec3.69ee		dynamic 
+			192.168.1.4 		0005.5ec3.69ee 		dynamic
+
+- Limitations
+
+	- Packet Tracer is a simulation tool, not a real-time network, so certain dynamic attacks, like ARP spoofing, aren’t supported natively.
+
+	- Cisco Packet Tracer doesn’t allow you to statically assign MAC addresses to IP addresses using the arp -s command.
+
+

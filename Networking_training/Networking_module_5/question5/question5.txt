@@ -1,0 +1,138 @@
+Divide the Network 192.168.1.0/24 into 4 Subnets
+
+Subnetting
+
+	- Subnetting is the process of dividing a larger IP network into smaller, more manageable subnetworks, or subnets. This is done to make better use of IP addresses, improve network security, and make network management easier. Each subnet has its own range of IP addresses, which allows for more efficient routing and isolation of network traffic.
+
+Steps:
+
+Step 1: The Initial Network
+
+	- The network 192.168.1.0/24 means the IP address range is from 192.168.1.0 to 192.168.1.255.
+	- The /24 subnet mask corresponds to 255.255.255.0, which means that the first 24 bits are used for the network part, and the remaining 8 bits are used for host addresses.
+
+
+Step 2: New Subnet Mask
+
+	- To divide the network into 4 subnets, you need to borrow additional bits from the host part of the IP address.
+	- The new subnet mask will be /26 (24 original network bits + 2 borrowed bits).
+	-The subnet mask in decimal form is 255.255.255.192.
+
+
+Step 3: The Subnet Ranges
+
+	- The range for each subnet will be determined by the size of the subnet. A /26 subnet gives 64 addresses per subnet (2^6 = 64).
+
+Subnet #1: 192.168.1.0/26
+
+Network address: 192.168.1.0
+Broadcast address: 192.168.1.63
+Usable IP range: 192.168.1.1 to 192.168.1.62
+Total hosts: 62 (64 total - 2 reserved addresses: network and broadcast)
+
+
+Subnet #2: 192.168.1.64/26
+
+Network address: 192.168.1.64
+Broadcast address: 192.168.1.127
+Usable IP range: 192.168.1.65 to 192.168.1.126
+Total hosts: 62
+
+
+Subnet #3: 192.168.1.128/26
+
+Network address: 192.168.1.128
+Broadcast address: 192.168.1.191
+Usable IP range: 192.168.1.129 to 192.168.1.190
+Total hosts: 62
+
+
+Subnet #4: 192.168.1.192/26
+
+Network address: 192.168.1.192
+Broadcast address: 192.168.1.255
+Usable IP range: 192.168.1.193 to 192.168.1.254
+Total hosts: 62
+
+
+Network details:
+
+Device		Subnet		IP Address	Subnet Mask
+	
+PC 1		Subnet 1	192.168.1.2	255.255.255.192		
+PC 2		Subnet 1	192.168.1.3	255.255.255.192		
+
+PC 3		Subnet 2	192.168.1.66	255.255.255.192 	
+PC 4		Subnet 2	192.168.1.67	255.255.255.192		
+
+PC 5		Subnet 3	192.168.1.130	255.255.255.192		
+PC 6		Subnet 3	192.168.1.131	255.255.255.192		
+
+PC 7		Subnet 4	192.168.1.194	255.255.255.192 	
+PC 8		Subnet 4	192.168.1.195	255.255.255.192	
+
+
+Router 1
+
+enable
+configure terminal
+
+interface gigabitEthernet 0/0
+ip address 192.168.1.62 255.255.255.192
+no shutdown
+exit
+
+interface gigabitEthernet 0/1
+ip address 192.168.1.190 255.255.255.192
+no shutdown
+exit
+
+interface gigabitEthernet 0/2
+ip address 10.0.0.1 255.255.255.252
+no shutdown
+exit
+
+ip route 192.168.1.64 255.255.255.192 10.0.0.2
+ip route 192.168.1.192 255.255.255.192 10.0.0.2
+end
+
+
+Router 2
+
+enable
+configure terminal
+interface gigabitEthernet 0/0
+ip address 192.168.1.126 255.255.255.192
+no shutdown
+exit
+
+interface gigabitEthernet 0/1
+ip address 192.168.1.254 255.255.255.192
+no shutdown
+exit
+
+interface gigabitEthernet 0/2
+ip address 10.0.0.2 255.255.255.252
+no shutdown
+exit
+
+ip route 192.168.1.0 255.255.255.192 10.0.0.1
+ip route 192.168.1.128 255.255.255.192 10.0.0.1
+end
+
+
+Troubleshoot:
+
+	- Ping failure caused by an incorrect gateway IP on the PC.
+
+	- Check the physical connection (cables, switches, etc.). If necessary, replace faulty cables.
+
+	- Due IP address conflict. Ensure that all devices have unique IP addresses.
+
+	- This is usually caused by a missing static route on the router. Add the correct static routes to the router.
+
+	
+
+
+
+

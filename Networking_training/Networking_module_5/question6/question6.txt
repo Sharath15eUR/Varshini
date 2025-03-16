@@ -1,0 +1,22 @@
+### Identify the Class of Each IP Address ###
+
+
+IP Address: 10.1.1.1
+
+	-Class: A
+	-Default Subnet Mask: 255.0.0.0
+	-IP Range: 10.0.0.0 - 10.255.255.255
+
+
+IP Address: 172.16.5.10
+
+	-Class: B
+	-Default Subnet Mask: 255.255.0.0
+	-IP Range: 172.16.0.0 - 172.31.255.255
+
+
+IP Address: 192.168.1.5
+
+	-Class: C
+	-Default Subnet Mask: 255.255.255.0
+	-IP Range: 192.168.0.0 - 192.168.255.255

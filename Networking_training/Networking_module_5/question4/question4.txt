@@ -1,0 +1,48 @@
+### Use Wireshark to capture DHCP Discover, Offer, Request, and Acknowledge messages and explain the process. ###
+
+The DHCP DORA process is a sequence of steps that a client device follows to automatically obtain an IP address and other network configuration details from a DHCP server.
+
+1. Discover: 
+	The client device, which doesn't yet have an IP address, sends a 'DHCP Discover' message as a broadcast across the network. This message is intended to locate a DHCP server. The client doesn't know the server's IP, so it sends the message to the broadcast address (255.255.255.255).
+
+2. Offer: 
+	One or more DHCP servers on the network receive the Discover message. Each server responds with a DHCP Offer message that contains:
+   		- The IP address the server is offering to the client.
+   		- The subnet mask.
+   		- The default gateway (router).
+   		- Lease time (how long the IP address will be valid).
+   	The server sends this offer as a unicast message directly to the client.
+
+3. Request: 
+	The client receives one or more DHCP Offer messages and chooses one. The client then sends a DHCP Request message back to the server, confirming that it accepts the offered IP address. If multiple servers made offers, the client informs all servers of its choice by broadcasting the Request message. It also tells the other servers that their offers are rejected.
+
+4. Acknowledge (ACK): 
+	The selected DHCP server responds with a DHCP Acknowledge (ACK)** message. This message confirms that the IP address has been assigned to the client and is now in use. It also contains additional configuration details, such as the lease time. The client can now use the assigned IP address for network communication.
+
+
+
+Steps:
+
+	- Start Wireshark and begin capturing on your network interface (e.g., enp0s3).
+
+		Command: sudo apt install wireshark
+
+	- Release the current DHCP lease (if you have one): 
+		-Open a terminal and run:
+
+			Command: sudo dhclient -r
+
+	- Renew DHCP lease to trigger the DHCP process: 
+
+			Command: sudo dhclient
+
+	- In Wireshark, use the filter 'dhcp' to only capture DHCP messages:
+
+		-This will display the following DHCP packets:
+
+			DHCP Discover (client looking for DHCP server)
+			DHCP Offer (server offering an IP address)
+			DHCP Request (client requesting the offered IP address)
+			DHCP Acknowledge (server acknowledging and assigning the IP address)
+
+
