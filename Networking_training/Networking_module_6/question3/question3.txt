@@ -1,0 +1,72 @@
+Subnetting 10.0.0.0/24 into 4 Equal Subnets
+
+Step 1: Calculate the New Subnet Mask
+	The given network: 10.0.0.0/24
+	Default subnet mask for /24: 255.255.255.0
+	Since we need 4 equal subnets, we need to borrow 2 bits from the host portion:
+	2 bits → 2² = 4 subnets
+	New subnet mask: /26 (255.255.255.192)
+
+Step 2: Determine the Subnet Ranges and Valid Hosts
+	Subnet 		Network Address	First Usable IP	Last Usable IP	Broadcast Address
+	1		10.0.0.0/26	10.0.0.1	10.0.0.62	10.0.0.63
+	2		10.0.0.64/26	10.0.0.65	10.0.0.126	10.0.0.127
+	3		10.0.0.128/26	10.0.0.129	10.0.0.190	10.0.0.191
+	4		10.0.0.192/26	10.0.0.193	10.0.0.254	10.0.0.255
+
+Step 3: Assign IP Addresses in Packet Tracer
+	Open Cisco Packet Tracer.
+	Add PCs and Switch.
+
+	Device		Subnet		IP Address	Subnet Mask
+	
+	PC 1		Subnet 1	10.0.0.2	255.255.255.192		
+	PC 2		Subnet 1	10.0.0.3	255.255.255.192		
+
+	PC 3		Subnet 2	10.0.0.66	255.255.255.192 	
+	PC 4		Subnet 2	10.0.0.67	255.255.255.192		
+
+	PC 5		Subnet 3	10.0.0.130	255.255.255.192		
+	PC 6		Subnet 3	10.0.0.131	255.255.255.192		
+
+	PC 7		Subnet 4	10.0.0.194	255.255.255.192 	
+	PC 8		Subnet 4	10.0.0.195	255.255.255.192	
+
+
+	Set the subnet mask 255.255.255.192 for all PCs.
+	Add a Router, configure 4 interfaces with the first usable IP of each subnet.
+	Connect PCs to the switch, and then switch to the router.
+	Configure router interfaces:
+
+	Router(config)# interface GigabitEthernet0/0
+	Router(config-if)# ip address 10.0.0.1 255.255.255.192
+	Router(config-if)# no shutdown
+
+	Router(config)# interface GigabitEthernet0/1
+	Router(config-if)# ip address 10.0.0.65 255.255.255.192
+	Router(config-if)# no shutdown
+
+	Router(config)# interface GigabitEthernet0/2
+	Router(config-if)# ip address 10.0.0.129 255.255.255.192
+	Router(config-if)# no shutdown
+
+	Router(config)# interface GigabitEthernet0/3
+	Router(config-if)# ip address 10.0.0.193 255.255.255.192
+	Router(config-if)# no shutdown
+
+	Set PC gateway to match the router’s IP for their subnet.
+	Verify connectivity using the ping command between PCs.
+
+
+Common Issues for Ping Failure in a Subnet Network 
+
+1 Incorrect IP Configuration – IP address, subnet mask, or gateway is misconfigured.  
+2 Interface Down– Router or switch interfaces are disabled (`administratively down`).  
+3 Wrong Default Gateway – PC’s gateway doesn’t match the router’s subnet IP.  
+4 Subnet Mismatch – Devices are on different subnets without proper routing.  
+5 Cable Disconnected – Incorrect or missing connections between devices.  
+6 Firewall or ACL Blocking ICMP – Access Control List (ACL) or firewall blocking ping requests.  
+7 Switch Port Issues – Port shutdown or VLAN misconfiguration.  
+8 Routing Issues – No route between subnets or missing default route.  
+9 NAT Misconfiguration – Internal devices can’t access external networks.  
+10 Duplicate IP Address – IP conflict causing connectivity issues.  

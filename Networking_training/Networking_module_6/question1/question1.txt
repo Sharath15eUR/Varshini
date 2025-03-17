@@ -1,0 +1,47 @@
+### Capture and Analyze ARP Packets Using Wireshark ###
+
+ARP (Address Resolution Protocol) is used to map a known IP address to a MAC address on a local network.
+
+Steps to capture and analyze ARP packets in Wireshark:
+
+    1 Open Wireshark and start capturing packets on the relevant network interface.
+
+    2 Filter ARP packets by typing arp in the filter bar.
+
+        - ARP Request:
+
+            The sender sends an ARP request asking, "Who has this IP? Tell me your MAC address."
+
+	    The sender's IP address is the source IP address of the ARP request, and the sender's MAC address is the source MAC address.
+
+	    Eg: 
+		ARP REQUEST
+
+		Sender MAC address: PCSSystemtec_f7:af:83 (08:00:27:f7:af:83) 
+		Sender IP address: 10.0.2.16 
+		Target MAC address: 00:00:00 00:00:00 (00:00:00:00:00:00) 
+		Target IP address: 10.0.2.2 
+
+
+        - ARP Reply:
+
+	    The recipient (with the requested IP) replies with an ARP reply, giving the sender the MAC address associated with the requested IP address.
+
+            The sender's IP address is the one that sent the request, while the receiver's IP and MAC addresses are provided in the ARP reply.
+
+	    Eg: 
+		ARP REPLY
+
+		Sender MAC address: 52:55:08:00:02:02 (52:55:08:00:02:02) 
+		Sender IP address: 10.0.2.2 
+		Target MAC address: PCSSystemtec_f7:af:83 (08:00:27:f7:af:83) 
+		Target IP address: 10.0.2.16  
+
+
+
+Importance of ARP in Packet Forwarding:
+
+	ARP (Address Resolution Protocol) maps IP addresses to MAC addresses on a local network.
+Without ARP, devices would not know how to physically address the data frames to other devices on the same local network.
+
+	When a device sends a packet to a destination IP within the local network, it first checks its ARP table. If it doesn’t find the MAC address for that IP, it sends an ARP request to discover it. Once it receives an ARP reply, it can forward the packet.

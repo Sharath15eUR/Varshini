@@ -1,0 +1,50 @@
+### IP Address Classification & NAT Explanation  
+
+Step 1: Identify the Class of Each IP Address
+ 
+	Each IP address belongs to a specific class based on the first octet (first number in the IP address).  
+
+	- 192.168.10.5 → First octet is 192 → Class C (192-223)  
+	- 172.20.15.1 → First octet is 172 → Class B (128-191)  
+	- 8.8.8.8 → First octet is 8 → Class A (1-126)  
+
+	Class A (1 - 126) is used for large networks (e.g., Internet providers, large companies).  
+	Class B (128 - 191) is used for medium-sized networks (e.g., universities, government offices).  
+	Class C (192 - 223) is used for small networks (e.g., home networks, small businesses).  
+
+
+Step 2: Identify Private vs Public IPs
+	Some IP address ranges are reserved as private and cannot be used on the internet.  
+
+	Private IP ranges:  
+	- 10.0.0.0 - 10.255.255.255 (Class A)  
+	- 172.16.0.0 - 172.31.255.255 (Class B)  
+	- 192.168.0.0 - 192.168.255.255 (Class C)  
+
+	Checking the given IPs:  
+	- 192.168.10.5 is private because it falls within 192.168.x.x.  
+	- 172.20.15.1 is private because it falls within 172.16.x.x - 172.31.x.x.  
+	- 8.8.8.8 is public because it is not in the private range (it is Google’s DNS server).  
+
+	Private IPs are used for internal networks and cannot communicate directly on the internet.  
+	Public IPs are assigned by ISPs and are routable on the internet.  
+
+
+Step 3: How NAT Handles Private IPs on the Internet
+	Network Address Translation (NAT) is used to convert private IPs into a public IP so devices can access the internet.  
+	A router with NAT enabled replaces the private IP with a public IP when sending traffic to the internet.  
+
+	How NAT Works Step-by-Step: 
+
+		1. A PC with IP 192.168.1.10 wants to access Google (8.8.8.8).  
+		2. The PC sends a request to 8.8.8.8.  
+		3. The router receives the request and changes the source IP from 192.168.1.10 → 203.0.113.5 (public IP).  
+		4. The request reaches Google’s server (8.8.8.8).  
+		5. Google sends a response to 203.0.113.5 (public IP).  
+		6. The router receives the reply and maps it back to 192.168.1.10 using NAT.  
+		7. The PC receives the response from Google.  
+
+	Types of NAT:
+		- Static NAT: Maps one private IP to one public IP.  
+		- Dynamic NAT: Uses a pool of public IPs to assign temporarily to internal devices.  
+		- PAT (Port Address Translation): Multiple private IPs share one public IP using different ports (most common).  
