@@ -1,0 +1,117 @@
+### You configured VLANs 10 and 20 on your switch and assigned ports to each VLAN. However, devices in VLAN 10 cannot communicate with devices in VLAN 20. Troubleshoot the issue. ###
+
+Network Setup Example:
+- Switch 1: Connect two PCs to it (one in VLAN 10 and the other in VLAN 20).
+- Switch 2: Connect two PCs to it (one in VLAN 10 and the other in VLAN 20).
+- Trunk Link: Connect Switch 1 to Switch 2 using a trunk port. This trunk port will carry multiple VLANs.
+
+Step 2: Assign VLANs to Ports on the Switches
+
+Before configuring trunk ports, you need to assign the devices to the respective VLANs.
+
+Switch 1 Configuration:
+
+1. Access Switch 1:
+   - Go to Switch 1 in Packet Tracer and click on the device to open the CLI.
+   
+2. Create VLANs:
+   
+   Switch1> enable
+   Switch1# configure terminal
+   Switch1(config)# vlan 10
+   Switch1(config-vlan)# name VLAN10
+   Switch1(config-vlan)# exit
+   Switch1(config)# vlan 20
+   Switch1(config-vlan)# name VLAN20
+   Switch1(config-vlan)# exit
+   
+
+3. Assign Ports to VLANs:
+  
+   Switch1(config)# interface range fa0/1 - 2
+   Switch1(config-if-range)# switchport mode access
+   Switch1(config-if-range)# switchport access vlan 10
+   Switch1(config-if-range)# exit
+   
+
+4. Repeat the process for VLAN 20, but for a different port:
+
+   
+   Switch1(config)# interface range fa0/3 - 4
+   Switch1(config-if-range)# switchport mode access
+   Switch1(config-if-range)# switchport access vlan 20
+   Switch1(config-if-range)# exit
+   
+
+Switch 2 Configuration:
+
+1. Access Switch 2:
+   - Click on Switch 2 in Packet Tracer and open the CLI.
+
+2. Create VLANs on Switch 2:
+   - Create the same VLANs (VLAN 10 and VLAN 20) on Switch 2 as on Switch 1:
+
+   Switch2> enable
+   Switch2# configure terminal
+   Switch2(config)# vlan 10
+   Switch2(config-vlan)# name VLAN10
+   Switch2(config-vlan)# exit
+   Switch2(config)# vlan 20
+   Switch2(config-vlan)# name VLAN20
+   Switch2(config-vlan)# exit
+
+3. Assign Ports to VLANs:
+   - Assign ports on Switch 2 to the respective VLANs:
+
+   Switch2(config)# interface range fa0/1 - 2
+   Switch2(config-if-range)# switchport mode access
+   Switch2(config-if-range)# switchport access vlan 10
+   Switch2(config-if-range)# exit
+   
+   Switch2(config)# interface range fa0/3 - 4
+   Switch2(config-if-range)# switchport mode access
+   Switch2(config-if-range)# switchport access vlan 20
+   Switch2(config-if-range)# exit
+
+
+Configure the Trunk Port Between Switches**
+
+1. Configure Trunk Port on Switch 1:
+   - Assume that the link between Switch 1 and Switch 2 is on port `FastEthernet0/24`.
+  
+   Switch1(config)# interface fa0/24
+   Switch1(config-if)# switchport mode trunk
+   Switch1(config-if)# switchport trunk allowed vlan 10,20
+   Switch1(config-if)# exit
+
+   This sets port `FastEthernet0/24` on Switch 1 to trunk mode and allows VLANs 10 and 20 to pass through this trunk.
+
+2. Configure Trunk Port on Switch 2:
+  
+   Switch2(config)# interface fa0/24
+   Switch2(config-if)# switchport mode trunk
+   Switch2(config-if)# switchport trunk allowed vlan 10,20
+   Switch2(config-if)# exit
+
+   This allows VLAN 10 and VLAN 20 traffic to traverse the trunk link between the two switches.
+
+
+Verify the Configuration
+
+1. Check VLANs on the Switches:
+   - Use the following command to verify that the VLANs are properly configured on both switches:
+ 
+   Switch1# show vlan brief
+   Switch2# show vlan brief
+  
+
+   Ensure that VLANs 10 and 20 are listed on both switches and that the trunk port is in trunk mode.
+
+
+Troubleshoot:
+
+	Without a router or Layer 3 switch, PC1 in VLAN 10 will not be able to communicate with PC2 in VLAN 20, and vice versa. The trunk port ensures the VLANs are segregated, but no routing is performed between VLANs.
+
+	If you try to ping between VLANs, the result will be a timeout. 
+	For example:
+		From PC1 (ping 192.168.20.10) will fail, because PC1 is in VLAN 10 and PC2 is in VLAN 20, and there is no routing.

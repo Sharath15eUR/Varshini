@@ -1,0 +1,156 @@
+### Try Test-Connection and nslookup commands for below websites 
+www.google.com 
+www.facebook.com 
+www.amazon.com 
+www.github.com 
+www.cisco.com ###
+
+
+# Google
+
+varshini@varshini:~$ ping -c 5 www.google.com
+PING www.google.com (142.250.196.4) 56(84) bytes of data.
+64 bytes from maa03s44-in-f4.1e100.net (142.250.196.4): icmp_seq=1 ttl=255 time=41.2 ms
+64 bytes from maa03s44-in-f4.1e100.net (142.250.196.4): icmp_seq=2 ttl=255 time=151 ms
+64 bytes from maa03s44-in-f4.1e100.net (142.250.196.4): icmp_seq=3 ttl=255 time=35.4 ms
+64 bytes from maa03s44-in-f4.1e100.net (142.250.196.4): icmp_seq=4 ttl=255 time=69.9 ms
+64 bytes from maa03s44-in-f4.1e100.net (142.250.196.4): icmp_seq=5 ttl=255 time=35.1 ms
+
+--- www.google.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4003ms
+rtt min/avg/max/mdev = 35.116/66.535/151.006/44.148 ms
+
+varshini@varshini:~$ nslookup www.google.com
+Server: 127.0.0.53
+Address: 127.0.0.53#53
+
+Non-authoritative answer:
+Name: www.google.com
+Address: 142.250.196.4
+Name: www.google.com
+Address: 2404:6800:4007:829::2004
+
+
+# Facebook
+
+varshini@varshini:~$ ping -c 5 www.facebook.com
+PING star-mini.c10r.facebook.com (157.240.192.35) 56(84) bytes of data.
+64 bytes from edge-star-mini-shv-02-maa2.facebook.com (157.240.192.35): icmp_seq=1 ttl=255 time=62.6 ms
+64 bytes from edge-star-mini-shv-02-maa2.facebook.com (157.240.192.35): icmp_seq=2 ttl=255 time=64.4 ms
+64 bytes from edge-star-mini-shv-02-maa2.facebook.com (157.240.192.35): icmp_seq=3 ttl=255 time=59.2 ms
+64 bytes from edge-star-mini-shv-02-maa2.facebook.com (157.240.192.35): icmp_seq=4 ttl=255 time=35.7 ms
+64 bytes from edge-star-mini-shv-02-maa2.facebook.com (157.240.192.35): icmp_seq=5 ttl=255 time=46.5 ms
+
+--- star-mini.c10r.facebook.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4000ms
+rtt min/avg/max/mdev = 35.691/53.659/64.364/10.950 ms
+
+varshini@varshini:~$ nslookup www.facebook.com
+Server: 127.0.0.53
+Address: 127.0.0.53#53
+
+Non-authoritative answer:
+www.facebook.com canonical name = star-mini.c10r.facebook.com.
+Name: star-mini.c10r.facebook.com
+Address: 157.240.192.35
+Name: star-mini.c10r.facebook.com
+Address: 2a03:2880:f137:182:face:b00c:0:25de
+
+
+# Amazon
+
+varshini@varshini:~$ ping -c 5 www.amazon.com
+PING www-amazon-com.customer.fastly.net (162.219.225.118) 56(84) bytes of data.
+64 bytes from 162.219.225.118: icmp_seq=1 ttl=255 time=36.7 ms
+64 bytes from 162.219.225.118: icmp_seq=2 ttl=255 time=33.2 ms
+64 bytes from 162.219.225.118: icmp_seq=3 ttl=255 time=33.2 ms
+64 bytes from 162.219.225.118: icmp_seq=4 ttl=255 time=41.2 ms
+64 bytes from 162.219.225.118: icmp_seq=5 ttl=255 time=62.1 ms
+
+--- www-amazon-com.customer.fastly.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 33.182/41.289/62.091/10.805 ms
+
+varshini@varshini:~$ nslookup www.amazon.com
+Server: 127.0.0.53
+Address: 127.0.0.53#53
+
+Non-authoritative answer:
+www.amazon.com canonical name = tp.47cf2c8c9-frontier.amazon.com.
+tp.47cf2c8c9-frontier.amazon.com canonical name = d3ag4hukkh62yn.cloudfront.net.
+Name: d3ag4hukkh62yn.cloudfront.net
+Address: 18.67.156.60
+Name: d3ag4hukkh62yn.cloudfront.net
+Address: 2600:9000:2241:9600:7:49a5:5fd4:b121
+Name: d3ag4hukkh62yn.cloudfront.net
+Address: 2600:9000:2241:7600:7:49a5:5fd4:b121
+Name: d3ag4hukkh62yn.cloudfront.net
+Address: 2600:9000:2241:3200:7:49a5:5fd4:b121
+Name: d3ag4hukkh62yn.cloudfront.net
+Address: 2600:9000:2241:b600:7:49a5:5fd4:b121
+Name: d3ag4hukkh62yn.cloudfront.net
+Address: 2600:9000:2241:a600:7:49a5:5fd4:b121
+Name: d3ag4hukkh62yn.cloudfront.net
+Address: 2600:9000:2241:4a00:7:49a5:5fd4:b121
+Name: d3ag4hukkh62yn.cloudfront.net
+Address: 2600:9000:2241:e800:7:49a5:5fd4:b121
+Name: d3ag4hukkh62yn.cloudfront.net
+Address: 2600:9000:2241:c000:7:49a5:5fd4:b121
+
+
+# Github
+
+varshini@varshini:~$ ping -c 5 www.github.com
+PING github.com (20.207.73.82) 56(84) bytes of data.
+64 bytes from 20.207.73.82: icmp_seq=1 ttl=255 time=61.3 ms
+64 bytes from 20.207.73.82: icmp_seq=2 ttl=255 time=65.9 ms
+64 bytes from 20.207.73.82: icmp_seq=3 ttl=255 time=55.9 ms
+64 bytes from 20.207.73.82: icmp_seq=4 ttl=255 time=75.2 ms
+64 bytes from 20.207.73.82: icmp_seq=5 ttl=255 time=74.2 ms
+
+--- github.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4002ms
+rtt min/avg/max/mdev = 55.870/66.503/75.226/7.413 ms
+
+varshini@varshini:~$ nslookup www.github.com
+Server: 127.0.0.53
+Address: 127.0.0.53#53
+
+Non-authoritative answer:
+www.github.com canonical name = github.com.
+Name: github.com
+Address: 20.207.73.82
+
+
+# Cisco
+
+varshini@varshini:~$ ping -c 5 www.cisco.com
+PING e2867.dsca.akamaiedge.net (23.213.214.90) 56(84) bytes of data.
+64 bytes from a23-213-214-90.deploy.static.akamaitechnologies.com (23.213.214.90): icmp_seq=1 ttl=255 time=29.7 ms
+64 bytes from a23-213-214-90.deploy.static.akamaitechnologies.com (23.213.214.90): icmp_seq=2 ttl=255 time=36.9 ms
+64 bytes from a23-213-214-90.deploy.static.akamaitechnologies.com (23.213.214.90): icmp_seq=3 ttl=255 time=37.5 ms
+64 bytes from a23-213-214-90.deploy.static.akamaitechnologies.com (23.213.214.90): icmp_seq=4 ttl=255 time=36.1 ms
+64 bytes from a23-213-214-90.deploy.static.akamaitechnologies.com (23.213.214.90): icmp_seq=5 ttl=255 time=34.6 ms
+
+--- e2867.dsca.akamaiedge.net ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 29.681/34.964/37.479/2.808 ms
+
+varshini@varshini:~$ nslookup www.cisco.com
+Server: 127.0.0.53
+Address: 127.0.0.53#53
+
+Non-authoritative answer:
+www.cisco.com canonical name = www.cisco.com.akadns.net.
+www.cisco.com.akadns.net canonical name = wwwds.cisco.com.edgekey.net.
+wwwds.cisco.com.edgekey.net canonical name = wwwds.cisco.com.edgekey.net.globalredir.akadns.net.
+wwwds.cisco.com.edgekey.net.globalredir.akadns.net canonical name = e2867.dsca.akamaiedge.net.
+Name: e2867.dsca.akamaiedge.net
+Address: 23.213.214.90
+Name: e2867.dsca.akamaiedge.net
+Address: 2600:140f:400:18e::b33
+Name: e2867.dsca.akamaiedge.net
+Address: 2600:140f:400:186::b33
+
+
+

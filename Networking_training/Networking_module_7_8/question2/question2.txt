@@ -1,0 +1,82 @@
+### Use Wireshark to capture and analyze DNS, TCP, UDP traffic and packet header, packet flow, options and flags ###
+
+1. DNS (Domain Name System) Traffic
+
+	DNS is the system that resolves domain names to IP addresses, enabling communication between devices over the internet.
+
+	DNS Packet Header Breakdown:
+
+	DNS Query/Response:
+		Transaction ID: A unique identifier for the DNS query, which allows the DNS server to match responses to queries.
+		Flags: Flags to indicate whether it's a query or a response, whether recursion is available, etc.
+		Questions: The number of questions in the query. Typically, one.
+		Answers: Contains the resolved IP addresses or other resource records.
+		Authority: Points to authoritative DNS servers.
+		Additional: Additional information like IP addresses for name servers.
+
+	DNS Query Example:
+		When a client requests www.google.com, it sends a DNS query to the DNS server. The server then resolves the domain to an IP (e.g., 142.250.190.78), and a DNS response is sent back to the client.
+
+	DNS Packet Flow:
+		Client → DNS Server: The client sends a DNS query for a domain name to the server.
+		DNS Server → Client: The server responds with the resolved IP address (A record).
+
+	Flags in DNS:
+
+		QR (Query/Response): 0 for a query, 1 for a response.
+		Recursion Desired (RD): Indicates that the client requests recursive resolution.
+		Recursion Available (RA): Indicates the server can provide recursive resolution.
+		Response Code (RCODE): Indicates the status of the query (e.g., no error, name error).
+
+
+
+2. TCP (Transmission Control Protocol) Traffic
+
+	TCP is a connection-oriented protocol, which means it ensures reliable, ordered delivery of data. It is commonly used for web traffic (HTTP, HTTPS), file transfers (FTP), and many other services.
+
+	TCP Packet Header Breakdown:
+		Source Port / Destination Port: Identifies the sending and receiving applications or services.
+		Sequence Number: Used to track the order of packets in a connection. The first packet sent by the sender starts with a sequence number, and subsequent packets have incremented numbers.
+		Acknowledgment Number: This is used to confirm the receipt of data. The receiver sends an acknowledgment back to the sender with the next expected sequence number.
+		Flags: Special flags used in the TCP segment to manage connections and data transmission.
+		Window Size: The amount of data the sender can transmit before receiving an acknowledgment.
+		Checksum: Used for error-checking to ensure data integrity.
+		Urgent Pointer: Points to the last urgent byte in the data (if any).
+		Options: Used for additional settings such as maximum segment size, timestamp, etc.
+
+	TCP Flags:
+		SYN: Synchronize the connection during the TCP handshake (part of the three-way handshake).
+		ACK: Acknowledge receipt of data.
+		FIN: Finish the connection; used for graceful connection termination.
+		RST: Reset the connection; used for errors or an unexpected termination.
+		PSH: Push the data to the receiving application without delay.
+		URG: Urgent data; flags that the data should be prioritized.
+		TCP Packet Flow:
+
+	Three-Way Handshake:
+
+		SYN: Client sends a SYN packet to initiate a connection.
+		SYN-ACK: Server responds with a SYN-ACK packet to acknowledge and establish the connection.
+		ACK: Client sends an ACK packet to complete the handshake.
+		Data Transfer: Once the connection is established, data is transferred using SYN, ACK, PSH, and FIN flags.
+
+	Connection Termination:
+
+		The FIN flag is used to gracefully close the connection.
+
+
+3. UDP (User Datagram Protocol) Traffic
+
+	UDP is a connectionless, lightweight protocol that does not guarantee the delivery of data. It is often used for real-time applications like streaming, VoIP, and online gaming, where speed is more critical than reliability.
+
+	UDP Packet Header Breakdown:
+		Source Port / Destination Port: Identifies the sending and receiving applications or services.
+		Length: Specifies the length of the UDP header and the data.
+		Checksum: Provides error-checking for the UDP packet.
+		UDP does not have the overhead of TCP and does not include sequence numbers, acknowledgments, or flags for managing connections. This makes it faster but less reliable.
+
+	UDP Packet Flow:
+		Client → Server: The client sends a UDP packet to the server without any handshake, connection establishment, or acknowledgment.
+		Server → Client: The server responds by sending a UDP packet to the client, again without establishing a connection.
+		UDP traffic does not ensure delivery, meaning packets can be lost in transit, and there’s no acknowledgment or retransmission. This is why it’s used for applications like DNS queries, VoIP, or video streaming, where some packet loss is acceptable.
+
