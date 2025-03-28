@@ -1,0 +1,11 @@
+### Difference between Bridge mode and Repeater mode ###
+
+Bridge Mode: 
+	- In bridge mode, two or more networks (can be wired and wireless) are connected, making them act as one network.
+	- It typically connects two separate networks to allow devices on both sides to communicate.
+	- eg; Linking a wired network in one building to a Wi-Fi network in another building.
+
+Repeater Mode: 
+	- In repeater mode, the device amplifies and extends the coverage of an existing Wi-Fi network by receiving and retransmitting the signal. 
+	- It does not form a separate network but extends the existing one.
+	- The goal of these networks is to boost the weak incoming signals and transmit them.

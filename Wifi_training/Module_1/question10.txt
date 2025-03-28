@@ -1,0 +1,60 @@
+### List down the Wi-Fi topologies and use cases of each one. ###
+
+Wi-Fi Topologies and Use Cases:
+
+- Infrastructure Mode: One or more access points provide connectivity to clients. Common in homes and offices, where a router connects to the internet and clients (smartphones, laptops, etc.) connect to it.
+
+- Ad-Hoc Mode: Devices communicate directly with each other without an access point. This is used for peer-to-peer communication, such as transferring files between two devices without a router.
+
+- Mesh Network: Multiple access points work together to create a seamless coverage area. Common in large homes, enterprises, and outdoor networks where coverage is needed in a large area.
+
+- Repeater Mode: Used to extend the range of an existing network, typically in homes or offices with poor signal in certain areas.
+
+- Point-to-Point (P2P): Two access points are set up in different locations to extend the network without the need for wired connections. Often used in outdoor setups.
+
+
+
+Topologies in the network:
+
+1. Star Topology:
+
+	-Structure: Devices connect to a central hub.
+	-Advantages: Easy to manage, scalable, isolated faults.
+	-Disadvantages: Hub failure causes network downtime, higher cabling cost.
+	-Use Cases: Home/office networks, Wi-Fi networks.
+
+2. Bus Topology:
+
+	-Structure: Devices share a single backbone cable (the bus).
+	-Advantages: Simple, cost-effective for small networks.
+	-Disadvantages: Single point of failure, slow with many devices.
+	-Use Cases: Small/local networks, legacy systems.
+
+3. Ring Topology:
+
+	-Structure: Devices form a closed loop; data travels in one direction.
+	-Advantages: Predictable data flow, no collisions.
+	-Disadvantages: Single point of failure, difficult to add devices.
+	-Use Cases: Token Ring networks, fiber-optic networks.
+
+4. Mesh Topology:
+
+	-Structure: Devices are interconnected, creating multiple paths.
+	-Advantages: High redundancy, fault tolerance.
+	-Disadvantages: Expensive, complex setup.
+	-Use Cases: Large enterprise networks, wireless mesh networks.
+
+5. Tree Topology:
+
+	-Structure: Hierarchical structure combining Star and Bus.
+	-Advantages: Scalable, logical device grouping.
+	-Disadvantages: Root node failure affects the whole network.
+	-Use Cases: Large office, campus networks.
+
+6. Hybrid Topology:
+
+	-Structure: Combines two or more topologies.
+	-Advantages: Flexible, fault-tolerant.
+	-Disadvantages: Complex, expensive.
+	-Use Cases: Large enterprises, complex network setups.
+

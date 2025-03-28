@@ -1,0 +1,12 @@
+### What is the difference between IEEE and WFA? ###
+
+IEEE:
+	- Institute of Electrical and Electronics Engineers 
+	- It is the standards organization responsible for developing and publishing Wi-Fi standards like 802.11.
+
+
+
+WFA:
+	- Wi-Fi Alliance 
+	- It is a non-profit organization that certifies Wi-Fi devices for interoperability. 
+	- It ensures that devices comply with Wi-Fi standards and operate well together, regardless of manufacturer.

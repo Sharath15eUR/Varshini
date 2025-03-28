@@ -1,0 +1,14 @@
+### What is BSS and ESS? ###
+
+
+BSS (Basic Service Set): 
+	- It’s a single wireless access point (AP) and its associated devices within a Wi-Fi network. 
+	- It forms the smallest unit of a Wi-Fi network, and each BSS has a unique identifier known as the BSSID (MAC address of the AP).
+	- Ideal for smaller networks.
+
+
+
+ESS (Extended Service Set): 
+	- An ESS is a collection of BSSs connected by a distribution system to create a larger network. 
+	- An ESS enables seamless roaming for users as they move between different APs in the network. ESS is identified by an SSID (Service Set Identifier).
+	- Used when network is large.

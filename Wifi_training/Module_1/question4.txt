@@ -1,0 +1,11 @@
+### What are the basic functionalities of a Wi-Fi Access Point? ###
+
+Wi-Fi Access Point (AP):
+
+
+Features:
+	-It enables wireless devices to connect to the network via radio waves(Establishment of wireless connectivity between devices).
+	-APs connect wireless clients to the wired LAN(Router/Switch).
+	-It forwards data between the wireless clients and the wired network (or other devices). 
+	-APs broadcast SSID, enabling clients to identify the network and receive an IP address.
+	

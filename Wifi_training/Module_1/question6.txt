@@ -1,0 +1,21 @@
+### What are the differences between 802.11a and 802.11b? ###
+
+
+
+802.11a
+
+	- Frequency band: 5 GHz
+	- Maximum Data Rate: 54 Mbps
+	- Range: high connectivity due to high frequency but shorter range/coverage
+	- Interference: Less interference
+	- Modulation: Orthogonal Frequency Division Multiplexing(OFDM)
+
+
+
+802.11b
+
+	- Frequency band: 2.4 GHz
+	- Maximum Data Rate: 11 Mbps
+	- Range: Longer range/coverage
+	- Interference: More interference
+	- Modulation: Direct Sequence Spread Spectrum(DSSS)

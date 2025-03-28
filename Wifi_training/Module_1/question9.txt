@@ -1,0 +1,47 @@
+### List down the type of Wi-Fi internet connectivity backhaul, share your home/college's wireless internet connectivity backhaul name and its properties ###
+
+Types of Wi-Fi Internet Connectivity Backhaul:
+
+
+-Wired Backhaul:
+	- Involves connecting the access point (AP) or router to the internet via Ethernet cables.
+	- Provides high reliability, speed, and minimal latency.
+	- Often used in homes, offices, and data centers.
+
+
+-Wireless Backhaul:
+	- Used when Ethernet wiring is impractical or impossible to install.
+	- Wi-Fi mesh systems typically use wireless backhaul to connect multiple mesh nodes.
+	- Can have some signal degradation and latency compared to wired backhaul, especially in congested areas.
+
+
+-Fiber Optic Backhaul:
+	- High-speed, long-distance connectivity using fiber optic cables.
+	- Provides extremely high bandwidth, ideal for large-scale networks, especially for ISPs.
+	- Often used in enterprise and ISP networks.
+
+
+-Microwave Backhaul:
+	-Wireless backhaul using microwave signals for long-distance connectivity.
+	-Typically used for connecting remote or hard-to-reach areas to the main network.
+	-Common in rural or isolated areas where laying cables is impractical or too expensive.
+
+
+-Satellite Backhaul:
+	-Uses satellite links to connect remote areas to the internet.
+	-Typically slower and more expensive than fiber optic or wired backhaul, but useful for regions with no ground infrastructure.
+	-Often used in rural or remote areas.
+
+
+
+- Home network and backhaul properties:
+
+	-Backhaul type: Wireless (Cellular Data-4G)
+	-Provider: Airtel
+	-Connection Speed: 10-100 Mbps (4G)
+	-Latency: 30ms to 100ms (4G)
+	-Reliability: Less reliable than wired connection.
+
+
+
+	

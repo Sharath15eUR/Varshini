@@ -1,0 +1,55 @@
+### Configure your modem/hotspot to operate only in 2.4Ghz and connect your laptop/Wi-Fi device , and capture the capability/properties in your Wi-Fi device. Repeat the same in 5Ghz and tabulate all the differences you observed during this ###
+
+
+
+2.4 GHz
+
+	- Max Speed: 150 Mbps
+	- Range: 100 mtrs
+	- Channel Width: 20 Mhz, 40 Mhz
+	- Interference: Higher
+
+5 GHz
+
+	- Max Speed: 1.2 Gbps
+	- Range: 30 mtrs
+	- Channel Width: 40 Mhz, 80 Mhz, 160 Mhz
+	- Interference: Lower
+
+My device properties:
+
+1. 2.4 GHz:
+
+	SSID:	Nokia C12 Pro
+	Protocol:	Wi-Fi 4 (802.11n)
+	Security type:	WPA3-Personal
+	Manufacturer:	Intel Corporation
+	Description:	Intel(R) Wi-Fi 6 AX201 160MHz
+	Driver version:	23.90.0.2
+	Network band:	2.4 GHz
+	Network channel:	1
+	Link speed (Receive/Transmit):	72/72 (Mbps)
+	Link-local IPv6 address:	fe80::1f96:a631:c1a6:XXXX%18
+	IPv4 address:	192.168.X.X
+	IPv4 DNS servers:	192.168.34.X(Unencrypted)
+	Physical address (MAC):	C4-75-AB-BD-X-X
+
+2. 5 GHz
+
+	SSID:	VARSHINI 
+	Protocol:	Wi-Fi 5 (802.11ac)
+	Security type:	WPA2-Personal
+	Manufacturer:	Intel Corporation
+	Description:	Intel(R) Wi-Fi 6 AX201 160MHz
+	Driver version:	23.90.0.2
+	Network band:	5 GHz
+	Network channel:	36
+	Link speed (Receive/Transmit):	390/433 (Mbps)
+	IPv6 address:	2401:4900:2358:1a92:87cc:501f:4da3:XXXX
+	Link-local IPv6 address:	fe80::1f96:a631:c1a6:XXXX%18
+	IPv4 address:	192.168.X.X
+	IPv4 DNS servers:	192.168.X.X (Unencrypted)
+	Physical address (MAC):	C4-75-AB-BD-XX-XX
+
+
+

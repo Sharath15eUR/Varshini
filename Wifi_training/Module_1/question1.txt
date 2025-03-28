@@ -1,0 +1,7 @@
+### In which OSL layer does the Wi-Fi standard/protocol fit? ###
+
+	- Wi-Fi operates primarily at the Data Link Layer (Layer 2) of the OSI model. 
+	- It is a wireless version of Ethernet (IEEE 802.11) and works within the Medium Access Control (MAC) sub-layer. It ensures reliable data transfer and frame control.
+	- Additionally, the physical layer (Layer 1) is involved since Wi-Fi uses radio waves for transmission.
+
+	- Hence, the Wi-fi Protocol fits at Datalink layer(Layer 2) and Physical layer(Layer 1)

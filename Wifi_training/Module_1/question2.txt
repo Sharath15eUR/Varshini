@@ -1,0 +1,29 @@
+### Can you share the Wi-Fi devices that you are using day-to-day life, share that device's wireless capability/properties after connecting to the network. Match your device to the corresponding Wi-Fi Generations based on properties. ###
+
+Common day-to-day Wifi devices:
+
+	- Laptops
+	- Smartphone
+	- Computers
+	- Smart TV
+	- Gaming console etc.,
+
+
+
+- Laptop
+
+	- Wi-Fi Version: Wi-Fi 6 (802.11ax)
+	- Frequency Bands: 2.4 GHz and 5 GHz 
+	- Speed: Up to 9.6 Gbps
+	- MIMO: Multi-User MIMO (MU-MIMO) support, allowing multiple devices to communicate simultaneously.
+	- Improved speed, reduced latency, and efficient.
+
+
+
+- Smartphone
+
+	-Wi-Fi Version: Wi-Fi 6 (802.11ax)
+	- Speed: Higher throughput and better performance in crowded areas.
+	- Frequency Bands: 2.4 GHz and 5 GHz
+
+
