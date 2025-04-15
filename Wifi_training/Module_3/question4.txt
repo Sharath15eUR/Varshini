@@ -1,0 +1,13 @@
+### What is the significance of OFDM in WLAN? How does it improve performance? ###
+
+
+OFDM:
+	-Orthogonal Frequency-Division Multiplexing
+	-It is a key technique used in modern Wi-Fi standards (such as 802.11a/g/n/ac/ax). 
+	-It divides a channel into many smaller sub-channels, each carrying a part of the data, allowing simultaneous transmission.
+
+
+Benefits:
+	-Improved performance in multipath environments: OFDM is highly resistant to interference and multipath distortion.
+	-Higher data rates: By using multiple sub-carriers, OFDM can transmit more data in the same bandwidth.
+	-Efficient use of spectrum: By making the sub-carriers orthogonal, OFDM minimizes the overlap between them, leading to higher spectral efficiency.

@@ -1,0 +1,44 @@
+### What are the types of PPDU? Explain the PPDU frame format across different Wi-Fi generations. ###
+
+
+-Types of PPDUs: 
+	1.Data 
+	2.Control
+	3.Management.
+
+
+-PPDU Formats:
+	-802.11b: Uses DSSS with a preamble and header.
+	-802.11a/g: Uses OFDM with a more complex preamble and header structure.
+	-802.11n/ac/ax: Uses OFDM and includes advanced features like MIMO and channel bonding.
+
+
+PPDU FRAME FORMATS:
+
+-802.11b
+
+	SYNC | SFD | SIGNAL | SERVICE | LENGTH | CRC | PSDU
+
+
+-802.11a/g:
+
+	STF | LTF | RATE | LEN | PARITY | TAIL | PSDU
+
+
+-802.11n:
+
+	HT SIGNAL1 | HT-STF | HT-LTF | HT SIGNAL2 | SERVICE | LENGTH | TAIL | CRC | PSDU
+
+
+-802.11ac:
+
+	L-STF | L-LTF | L-SIGNAL | VHT SIGNAL-A1 | VHT SIGNAL-A2 | VHT-STF | VHT-LTF | VHT SIGNAL-B | SERVICE | LENGTH | TAIL | CRC | PSDU
+
+
+-802.11ax:
+
+	L-STF | L-LTF | L-SIGNAL | HE SIGNAL-A | HE SIGNAL-B | HE-STF | HE-LTF | SERVICE | LENGTH | TAIL | CRC | PSDU
+
+
+
+

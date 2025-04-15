@@ -1,0 +1,18 @@
+### What are PPDU, PLCP, and PMD in the PHY layer? ###
+
+
+PPDU: 
+	-Physical Protocol Data Unit
+	-The entire PHY frame that includes the preamble, header, payload, and CRC.
+
+
+PLCP: 
+	-Physical Layer Convergence Protocol
+	-Encapsulates the MAC (Medium Access Control) frame into a form suitable for transmission. 
+	-It adds the PLCP header to the PPDU.
+
+
+PMD: 
+	-Physical Medium Dependent
+	-The actual physical transmission of the data. 
+	-It defines the modulation and encoding schemes used to transmit the data across the medium.

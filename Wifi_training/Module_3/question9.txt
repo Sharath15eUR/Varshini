@@ -1,0 +1,14 @@
+### What is the difference between MIMO and MU-MIMO? ###
+
+
+-MIMO: 
+	-Multiple Input, Multiple Output
+	-It refers to the use of multiple antennas at both the transmitter and receiver ends. 
+	-It enhances the link by sending multiple data streams over the same frequency channel.
+
+
+
+-MU-MIMO: 
+	-Multi-User Multiple Input, Multiple Output
+	-A more advanced form of MIMO that allows a router to serve multiple devices at the same time on the same channel.
+	-Helps in improving overall network capacity and reducing congestion.

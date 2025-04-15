@@ -1,0 +1,33 @@
+### How do modulation schemes work in the PHY layer? Compare different modulation schemes and their performance across various Wi-Fi standards. ###
+
+
+Modulation schemes define how the data is encoded onto the carrier signal. In the PHY layer, modulation determines how binary data is mapped onto the signal's properties.
+
+
+Modulation Schemes in Wi-Fi:
+
+-BPSK: 
+	-Binary Phase Shift Keying
+	-Simple modulation that shifts the phase of the signal to represent binary data.
+
+
+-QPSK: 
+	-Quadrature Phase Shift Keying
+	-Carries 2 bits per symbol by shifting the phase in 4 distinct states.
+
+
+-16-QAM: 
+	-Quadrature Amplitude Modulation
+	-Transmits 4 bits per symbol by combining amplitude and phase changes.
+
+
+-64-QAM: 
+	-Transmits 6 bits per symbol by increasing the number of possible states in both amplitude and phase.
+
+
+Comparison Across Standards:
+
+802.11a/b/g: Typically use BPSK, QPSK, and 16-QAM for lower data rates, with 64-QAM available in higher-rate modes.
+
+802.11n/ac/ax: Use higher-order QAM schemes like 64-QAM and 256-QAM to achieve faster data rates.
+

@@ -1,0 +1,14 @@
+### What is the difference between OFDM and OFDMA? ###
+
+
+OFDM:
+	-Orthogonal Frequency Division Multiplexing
+	-It divides a channel into multiple sub-channels and transmits data in parallel. 
+	-It works well for scenarios where the receiver can handle multiple streams.
+
+
+
+OFDMA:
+	-Orthogonal Frequency Division Multiple Access
+	-It is an extension of OFDM used in Wi-Fi 6 (802.11ax). 
+	-It allows the allocation of sub-carriers to multiple users simultaneously, improving efficiency and throughput in crowded networks.

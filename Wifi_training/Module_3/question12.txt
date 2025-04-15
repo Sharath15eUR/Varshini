@@ -1,0 +1,22 @@
+### How is the data rate calculated? ###
+
+
+The data rate is determined by the following factors:
+
+	-Channel Bandwidth: Wider channels allow more data.
+	-Modulation Scheme: Higher-order modulation allows more bits per symbol.
+	-MIMO and MU-MIMO: More spatial streams increase the throughput.
+	-Coding Rate: The ratio of the number of data bits to total bits.
+
+
+Data Rate: The speed at which data is transferred over a network.
+
+	Data rate = No. of SD * No. of BPSCS * R * No. of SS / Time of DFT + Time of GI
+
+	where
+		No. of SD -> number of data subcarriers
+		No. of BPSCS -> number of coded bits per subcarrier per stream
+		R -> coding rate
+		No. of SS -> number of spatial streams
+		Time of DFT -> OFDM symbol duration
+		Time of GI -> guard interval duration

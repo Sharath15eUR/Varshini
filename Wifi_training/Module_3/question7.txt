@@ -1,0 +1,33 @@
+### Describe the structure of an 802.11 PHY layer frame. What are its key components? ###
+
+Structure of an 802.11 PHY Layer Frame:
+
+PREAMBLE | HEADER | PSDU
+   |	      |
+   |	      |
+   |	      |
+   |       SIGNAL | SERVICE | LEN | crc
+   |
+SYNC | SFD
+
+
+
+An 802.11 PHY frame is typically made up of several components:
+
+-Preamble: 
+	-Used for synchronization and includes both a short and long preamble for synchronization and data detection.
+	-Sync(128/56 bits): Helps receiver to lock onto signal.
+	-Start Frame Delimiter(16 bits): Marks the start of the frame.
+
+-Header: 
+	-Contains information such as the transmission length, destination, and source MAC address.
+	-Signal(8 bits): Indicates data rate.
+	-Service(8 bits): Reserved bits for future use
+	-Length(8 bits):Specifies frame length.
+	-CRC(8 bits): Error detection code for ensuring the integrity of the data.
+
+
+-Data Payload: 
+	-The actual data being transmitted.
+
+

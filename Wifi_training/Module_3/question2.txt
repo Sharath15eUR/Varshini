@@ -1,0 +1,15 @@
+### What are DSSS and FHSS? How do they work? ###
+
+
+DSSS:
+	-Direct Sequence Spread Spectrum 
+	-It works by spreading the data signal over a wider frequency band than the minimum bandwidth necessary. 
+	-It uses a "spreading code" to multiply the data signal, which results in a higher transmission bandwidth.
+	-Provides better resistance to interference and jamming. 
+	-It is mainly used in 802.11b.
+
+FHSS: 
+	-Frequency Hopping Spread Spectrum
+	-FHSS works by rapidly switching frequencies in a pseudorandom pattern. 
+	-This allows devices to communicate while hopping over a set of frequencies.
+	-Reduces the chance of interference since each transmission occurs on a different frequency.

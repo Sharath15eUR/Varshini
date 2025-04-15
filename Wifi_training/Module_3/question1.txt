@@ -1,0 +1,44 @@
+### What are the different 802.11 PHY layer standards? Compare their characteristics.  ###
+
+
+The IEEE 802.11 standards define different Physical Layer (PHY) types for wireless communication. 
+
+802.11a: 
+	-5 GHz band
+	-Data rate of 54 Mbps
+	-OFDM (Orthogonal Frequency-Division Multiplexing)
+	-High-speed, short-range communication in environments with less interference.
+
+
+802.11b: 
+	-2.4 GHz band
+	-Data rate of up to 11 Mbps
+	-DSSS (Direct Sequence Spread Spectrum)
+	-It is more susceptible to interference from other devices operating in the same frequency band.
+
+
+802.11g: 
+	-2.4 GHz band
+	-Data rate of 54 Mbps
+	-Combining the best features of 802.11b (range) and 802.11a (speed) by using OFDM.
+
+
+802.11n(Wi-Fi 4): 
+	-2.4 GHz and 5 GHz bands 
+	-Data rates from 72 Mbps to 600 Mbps
+	-MIMO (Multiple Input Multiple Output)
+	-Supports wider channels (up to 40 MHz) for better performance.
+
+
+802.11ac(Wi-Fi 5): 
+	-5 GHz band
+	-supporting speeds up to 3.47 Gbps using wider channels (80 MHz and 160 MHz)
+	-MIMO, OFDMA.
+
+
+802.11ax (Wi-Fi 6): 
+	-2.4 GHz,5 GHz and 6GHz bands 
+	-Data rates up to 9.6 Gbps
+	-OFDMA (Orthogonal Frequency Division Multiple Access), MU-MIMO and BSS Coloring.
+
+

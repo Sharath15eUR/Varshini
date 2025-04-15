@@ -1,0 +1,11 @@
+### What is the role of Guard Intervals in WLAN transmission? How does a short Guard Interval improve efficiency? ###
+
+-Role of Guard Intervals in WLAN Transmission:
+
+	Guard Intervals are short periods of time inserted between data symbols in OFDM transmissions to prevent interference from multipath reflections.
+
+
+-Short Guard Interval (SGI): 
+	-Reduces the time between symbols, allowing for faster data transmission. 
+	-SGI improves efficiency but may increase the risk of data collisions in environments with severe multipath interference. 
+	-In Wi-Fi 6 (802.11ax), SGI is typically set at 400 ns, compared to the longer 800 ns used in earlier standards.

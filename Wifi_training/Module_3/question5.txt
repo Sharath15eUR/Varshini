@@ -1,0 +1,20 @@
+### How are frequency bands divided for Wi-Fi? Explain different bands and their channels. ###
+
+
+Wi-Fi operates in the following frequency bands:
+
+-2.4 GHz Band: 
+	-Commonly used by 802.11b/g/n devices. 
+	-It is divided into channels, typically 20 MHz wide. 
+	-This band is susceptible to interference from other devices like microwaves and Bluetooth.
+
+
+-5 GHz Band: 
+	-Used by 802.11a/n/ac/ax. 
+	-It offers more channels and less congestion compared to the 2.4 GHz band 
+	-Supports channels that are 20 MHz, 40 MHz, 80 MHz, and 160 MHz wide.
+
+
+-6 GHz Band (Wi-Fi 6E): 
+	-Introduced by Wi-Fi 6E
+	- This band provides additional channels with less interference. 	-Overall performance is improved in dense environments.
