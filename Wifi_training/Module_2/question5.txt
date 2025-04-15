@@ -1,0 +1,10 @@
+### How the CAPWAP tunnel is maintained between AP and controller ###
+
+
+-Tunnel Establishment: During initial join, control and data tunnels are created.
+-Tunnel Maintenance: Heartbeat messages, rejoin attempts, and status updates ensure the tunnel stays active.
+-Data Traffic Handling: User data is securely encapsulated and transmitted over the data tunnel.
+-Failover and Reconnect: In case of disruptions, the AP attempts to re-establish the tunnel.
+-Security: Both tunnels are typically encrypted to ensure data security.
+
+This mechanism ensures that the AP and WLC remain in sync, providing centralized control and efficient data management in large-scale wireless networks.

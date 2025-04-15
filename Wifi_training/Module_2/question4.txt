@@ -1,0 +1,32 @@
+### Whats the difference between Lightweight APs and Cloud-based APs
+###
+
+
+-Autonomous APs:
+
+	-Operation: Autonomous APs are standalone devices.All configurations are done directly in the controller. 	
+	-Configuration: All settings, such as SSID, security, channel selection, and power settings, are configured manually on each individual AP.
+	-Deployment: These are easier to deploy in small networks where centralized management is not necessary.
+	-Services: Client authentication, encryption, and traffic forwarding. 
+	-Use Case: Small offices, cafes, and retail shops.
+
+
+
+-Lightweight APs (LWAPs):
+
+	-Management: Centralized management via a WLC.
+	-Architecture: Split MAC architecture with WLC performs upper MAC functions and AP performs lower MAC functions.
+	-Use Case: Primarily used in large, enterprise networks 	-Example: Cisco's LWAPs are managed by a WLC.
+	-Deployment: Requires a constant connection to the WLC to function properly. If the WLC goes down, the AP can operate in a limited local mode.
+
+
+
+-Cloud-based APs:
+
+	-Management: Managed remotely via a cloud platform.
+	-Architecture: APs are connected to the internet and receive configuration, updates, and monitoring from the cloud. The cloud platform acts as the central controller.
+	-Use Case: Suitable for smaller, distributed networks.
+	-Example: Meraki, cloud-managed AP systems.
+	-Deployment: Can be deployed without the need for an on-site controller, making it easier to manage remote locations.
+
+

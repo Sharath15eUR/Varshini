@@ -1,0 +1,24 @@
+### What's the difference between Sniffer and monitor mode, use case for each mode ###
+
+
+
+Sniffer Mode:
+
+	-Purpose: Capture all traffic on the channel for analysis.
+	-Traffic Handling: Does not interact with the network; only captures packets.
+	-Traffic Visibility: Captures every packet on the channel.
+	-Usage: Troubleshooting, security analysis, performance diagnostics.
+	-Network Participation: Completely passive; does not participate in the network.
+	-Tools Used: Wireshark, similar packet analyzers.
+
+
+Monitor Mode:
+
+	-Purpose: Passive monitoring of the network environment and interference detection.
+	-Traffic Handling: Does not transmit user data but listens to the network for monitoring.
+	-Traffic Visibility: Captures management frames, control frames, and data frames relevant to network health.
+	-Usage: Network health monitoring, interference detection, channel planning.
+	-Network Participation: Passive but still capable of analyzing the RF environment and network behavior.
+	-Tools Used: Wireless diagnostic tools, Spectrum analyzers for RF environment analysis.
+
+

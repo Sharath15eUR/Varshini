@@ -1,0 +1,57 @@
+### Describe about CAPWAP, explain the flow between AP and Controller ###
+
+
+
+- CAPWAP: Control And Provisioning of Wireless Access Points
+
+CAPWAP is a standardized protocol that enables communication between a Lightweight AP and a Wireless LAN Controller (WLC). It allows central management, provisioning, and control of APs in a wireless network.
+
+
+
+Flow Between AP and Controller (Step-by-Step)
+
+1. AP Boot-Up
+
+	-The AP powers on and performs a basic self-check.
+	-It tries to discover a WLC using various methods like:
+		-DHCP Option 43
+		-DNS resolution
+	-Broadcast or statically configured controller IP
+
+
+
+2. Discovery Phase
+
+	-The AP sends a CAPWAP Discovery Request.
+	-One or more WLCs respond with Discovery Response messages.
+
+
+
+3. Join Phase
+
+	-The AP selects the best WLC based on response time, priority, etc.
+	-Sends a Join Request to that WLC.
+	-WLC authenticates and approves the AP with a Join Response.
+
+
+
+4. Image and Configuration Download
+
+	-If needed, the WLC upgrades the AP's image to match its own software version.
+	-The WLC then pushes the AP configuration (SSID, VLANs, security settings, etc.).
+
+
+
+5. Tunnel Establishment
+
+	-Control Tunnel : For management/configuration traffic.
+	-Data Tunnel : For user traffic.
+
+
+
+6. Operational Phase
+	-AP starts broadcasting SSIDs.
+	-Wireless clients associate with AP.
+
+All client data and management traffic goes through WLC via CAPWAP tunnels.
+

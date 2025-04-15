@@ -1,0 +1,10 @@
+### What happens on wireless client connected to Lightweight AP in local mode if WLC goes down? ###
+
+
+-Client Behavior: If the WLC goes down, a lightweight AP in local mode will still allow the clients to stay connected as long as their connection was already established.
+
+-Data Forwarding: However, the AP cannot make any changes to the client's session, such as roaming or reassociation. Essentially, the AP becomes disconnected from the network management functions.
+
+-Temporary Service: The clients will retain their current connection, but no new clients can associate with the AP, and no configuration changes can be applied.
+
+-Fallback: If the WLC remains down for a long time, the AP might eventually switch to a standalone mode or attempt to find a new WLC, depending on the configuration.

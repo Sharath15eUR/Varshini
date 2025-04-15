@@ -1,0 +1,20 @@
+### Where this CAPWAP fits in OSI model, what are the two tunnels in CAPWAP and its purpose  ###
+
+
+-CAPWAP in the OSI Model:
+
+	-CAPWAP (Control and Provisioning of Wireless Access Points) primarily operates at Layer 2 and Layer 3 of the OSI model.
+
+	-Layer 2 (Data Link Layer):
+		-CAPWAP manages the link layer communication between the AP and WLC.
+		-CAPWAP encapsulates data and management traffic, between the AP and the WLC ensures reliability and security. 
+
+	-Layer 3 (Network Layer):
+		-CAPWAP handles the IP-based communication between the AP and the WLC, allowing the AP to send control and data traffic over IP networks.
+
+
+-Tunnels:
+
+	-Control Tunnel: It handles management traffic like AP join requests, configuration commands, and keep-alive messages.
+
+	-Data Tunnel: Handles user data traffic between the AP and WLC, allowing the AP to remain lightweight and offloading traffic processing to the WLC.

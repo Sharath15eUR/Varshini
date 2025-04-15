@@ -1,0 +1,8 @@
+### If WLC deployed in WAN, which AP mode is best for local network and how? ###
+
+
+-If the Wireless LAN Controller (WLC) is deployed over a WAN connection, the best mode for the APs is typically the FlexConnect mode.
+
+-FlexConnect Mode:
+	-In this mode, APs can operate locally by caching user data and policies locally on the AP. The APs can still communicate with the WLC for control and management tasks, but they can function even if the WAN link is down.
+	-FlexConnect allows the AP to operate in an autonomous manner for client data forwarding, while the WLC manages the configuration and control aspects. It is ideal for remote or branch offices where a WAN connection to the WLC might have latency or unreliability issues.

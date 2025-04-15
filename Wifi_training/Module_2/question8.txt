@@ -1,0 +1,13 @@
+### What are challenges if deploying autonomous APs (more than 50) in large network like university ###
+
+
+-Scalability: Managing more than 50 autonomous APs individually becomes difficult and complex, as each AP needs to be configured and monitored separately.
+
+-Lack of Centralized Management: Autonomous APs don't have centralized control i.e., WLC, meaning any changes (e.g., configuration updates, firmware upgrades) need to be applied manually to each AP.
+
+-Inconsistent Policy Enforcement:Without a central controller, enforcing uniform policies across all APs can lead to inconsistencies.
+
+-Troubleshooting Complexity: Identifying issues across a large network of autonomous APs can be time-consuming.
+
+-Roaming Issues: With autonomous APs, clients may have difficulty roaming seamlessly between APs because each AP may be independently configured without a common coordination mechanism.
+

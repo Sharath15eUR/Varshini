@@ -1,0 +1,26 @@
+### Brief about SplitMAC architecture and how it improves the AP's performance ###
+
+
+
+- Split MAC Architecture:
+
+In Split MAC architecture, the MAC layer functions of a wireless network are divided between the Access Point (AP) and the Wireless LAN Controller (WLC).
+
+
+- The AP handles time-sensitive tasks, like:
+	1. Sending beacons
+	2. Acknowledging frames
+	3. Handling encryption/decryption
+
+- The WLC handles complex tasks, like:
+	1.User authentication
+	2.Roaming decisions
+	3.QoS policies
+	4. Access control
+
+- How it improves AP performance:
+	1.Simplifies AP design, reducing cost and complexity.
+	2.Centralizes control, making the network easier to manage.
+	3.Improves scalability and security, as policies are enforced consistently from the WLC.
+
+
