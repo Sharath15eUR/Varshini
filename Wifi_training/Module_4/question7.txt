@@ -1,0 +1,21 @@
+### Describe the power saving scheme in MAC layer and explore on the types of Power saving mechanisms ###
+
+
+
+-Power-saving schemes are critical for battery-powered devices like laptops, smartphones, and IoT devices.
+
+	-PS (Power Save) Mode: In PS mode, the client device periodically "sleeps" and only wakes up to check if there’s any buffered data waiting for it. This helps to conserve battery.
+
+	-DTIM (Delivery Traffic Indication Map): The AP periodically sends a DTIM to notify clients about buffered data. Devices that are in power-save mode wake up during these intervals to receive data.
+
+	-U-APSD (Unscheduled Automatic Power Save Delivery): An enhancement that allows devices to save power by dynamically adjusting their wake-up periods, unlike traditional PS mode.
+
+
+
+-Types of Power-saving Mechanisms:
+
+	-Legacy Power Save: Devices go to sleep during idle periods and check at scheduled intervals.
+
+Fast Power Save: More modern systems allow for more dynamic, real-time adjustments to sleep/wake schedules.
+
+

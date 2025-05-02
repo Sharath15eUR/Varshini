@@ -1,0 +1,28 @@
+### Please list all the MAC layer functionalities in all Management, Control and Data plane ###
+
+
+-Management Plane:
+	-Association and disassociation with APs.
+	-Authentication and key management.
+	-Scanning and network discovery.
+	-Beacon frame transmission for APs.
+	-Probe requests and responses for network discovery.
+
+
+
+-Control Plane:
+	-RTS/CTS for collision avoidance.
+	-ACK for frame delivery confirmation.
+	-Block ACK for managing large data frames efficiently.
+	-Power management.
+
+
+
+-Data Plane:
+	-Frame forwarding.
+	-Fragmentation and reassembly.
+	-QoS management for prioritization of traffic.
+	-Error correction.
+	-Encryption and decryption.
+
+

@@ -1,0 +1,15 @@
+### Describe the Medium Access Control methodologies ###
+
+
+-CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance): The primary method in Wi-Fi networks that reduces collisions by sensing the medium and using backoff periods.
+
+-RTS/CTS (Request to Send / Clear to Send): Used to avoid collisions in hidden node scenarios by using a handshake before data transmission.
+
+-TDMA (Time Division Multiple Access): Allocates fixed time slots to each device for transmission.
+
+-OFDMA (Orthogonal Frequency Division Multiple Access): Introduced in Wi-Fi 6 to divide channels into smaller subcarriers for simultaneous transmission by multiple devices.
+
+-Polling: The AP controls communication, polling each device to ask if it has data to send, preventing collisions.
+
+-CDMA (Code Division Multiple Access): Uses unique codes to differentiate between transmissions from multiple devices over the same frequency, used mainly in cellular networks.
+

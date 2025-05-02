@@ -1,0 +1,11 @@
+###  Brief about the client association process ###
+
+
+-The client association process is the sequence of steps a device follows to connect to an AP in a wireless network:
+
+	-Scan for available networks by scanning.
+	-Select an AP to join.
+	-Authentication: The client sends an authentication request to the AP, which responds with an authentication success message (using an open system or shared key).
+	-Association: The client sends an association request to the AP, which includes information such as supported data rates and capabilities. The AP responds with an association response.
+
+Once associated, the client can exchange data with the AP and other devices on the network.

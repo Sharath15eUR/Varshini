@@ -1,0 +1,14 @@
+### Describe the frame format of the 802.11 MAC header and explain the purpose of each fields ###
+
+
+-The 802.11 MAC header consists of the following fields:
+
+	-Frame Control: Specifies the type of frame and frame-specific information.
+	-Duration/ID: Indicates the time the channel is reserved.
+	-Address 1: Destination address.
+	-Address 2: Source addres.
+	-Address 3: Address of the receiving access point or network.
+	-Sequence Control: Helps in ordering frames and identifying duplicate frames.
+	-Address 4: Used for mesh networks to carry the mesh point address.
+	-Frame Body: Contains the payload or the actual data.
+	-FCS (Frame Check Sequence): Error-checking field for detecting transmission errors.

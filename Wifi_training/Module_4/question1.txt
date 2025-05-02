@@ -1,0 +1,14 @@
+### What is the significance of MAC layer and in which position it is placed in the OSI model ###
+
+
+- MEDIA ACCESS CONTROL(MAC):
+
+	-The Medium Access Control (MAC) layer is a sublayer of the Data Link Layer (Layer 2) in the OSI model.
+	-It controls access to the shared communication medium. 
+	-It determines how devices on a network access and share the physical transmission medium.
+	-Collision avoidance: Preventing simultaneous transmission from multiple devices.
+	-Frame sequencing and addressing: Ensuring frames are delivered correctly to the correct device.
+	-Medium access control: Managing how devices access the shared communication medium.
+
+- POSITION:
+	-The MAC layer operates between the Physical Layer (Layer 1) and the Network Layer (Layer 3). 

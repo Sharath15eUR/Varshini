@@ -1,0 +1,18 @@
+### Brief about the Block ACK mechanism and its advantages ###
+
+
+
+-BLOCK ACKNOWLEDGEMENT:
+
+	-The Block ACK mechanism allows multiple data frames to be acknowledged with a single acknowledgment frame. This reduces overhead by eliminating the need for individual ACK frames for each transmitted data frame.
+
+
+
+-ADVANTAGES:
+
+	-Reduced Overhead: By acknowledging a group of frames, the total number of acknowledgment frames decreases.
+
+	-Higher Efficiency: Multiple frames can be transmitted in one burst with a single acknowledgment, improving throughput.
+
+	-Better Utilization: Especially useful in high-throughput or bulk data transfer scenarios.
+

@@ -1,0 +1,22 @@
+### Explain the scanning process and its types in detail ###
+
+
+-The scanning process in Wi-Fi involves discovering available networks. 
+
+-Types of scanning:
+
+	-Passive Scanning: 
+
+		-In this mode, the client listens for Beacon frames from APs. The client does not transmit any requests but only listens to the network information periodically broadcasted by APs. This method is more energy-efficient but may take longer.
+
+
+	-Active Scanning: 
+
+		-In this mode, the client sends out Probe Requests and waits for Probe Responses from APs. It actively seeks available networks. This method is faster but consumes more energy as the client is continuously transmitting.
+
+
+	-Hybrid Scanning:
+		
+		-Some devices use a Hybrid Scanning approach, which combines the advantages of both passive and active methods. Typically, the device starts by listening for Beacon frames (Passive Scanning) and then follows up by sending Probe Requests (Active Scanning) if needed to gather more specific information.
+
+

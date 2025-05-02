@@ -1,0 +1,23 @@
+###   Explain each steps involved in EAPOL 4-way handshake and the purpose of each keys derived from the process ###
+
+
+-The EAPOL 4-Way Handshake is used in WPA/WPA2 to securely establish keys for encryption and authentication between a client and an AP.
+
+	-Message 1: The AP sends a nonce to the client. This nonce will be used for generating the Pairwise Transient Key (PTK).
+	
+	-Message 2: The client responds with its own nonce and proves it knows the password by sending a hash of the password and nonces to the AP.
+
+	-Message 3: The AP sends a confirmation message to the client that includes the final key material (GTK - Group Temporal Key) used for encrypting broadcast messages.
+
+	-Message 4: The client acknowledges the message and completes the handshake.
+
+
+
+-Key Derivation:
+
+	-PTK (Pairwise Transient Key): Derived using the pair of nonces and the shared secret. It is used for encrypting unicast traffic between the client and the AP.
+
+	-GTK (Group Temporal Key): Used to encrypt multicast and broadcast traffic, ensuring all clients in the network can decrypt such messages securely.
+
+
+

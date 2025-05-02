@@ -1,0 +1,13 @@
+### Explain about A-MSDU, A-MPDU and A-MSDU in A-MPDU ###
+
+
+- A-MSDU (Aggregate MSDU):
+	Combines multiple MSDUs into a single frame. This reduces the overhead of sending multiple frames, as there is only one MAC header for multiple data units.
+
+
+- A-MPDU (Aggregate MPDU):
+	Combines multiple MPDUs (MAC Protocol Data Units) into a single transmission frame. This further reduces overhead by consolidating multiple frames into one larger frame.
+
+
+- A-MSDU in A-MPDU:
+	A hybrid approach where multiple A-MSDUs are aggregated into an A-MPDU. This method combines the benefits of both aggregation techniques for maximum efficiency.
