@@ -1,0 +1,36 @@
+### What are the key features of Wi-Fi 6, 6E and 7 and how do they differ from previous standards like Wi-Fi 5 (802.11ac) ###
+
+
+-Wi-Fi 6 (802.11ax):
+
+	-Higher Speeds: Wi-Fi 6 can support speeds up to 9.6 Gbps, which is faster than Wi-Fi 5 speed 3.5 Gbps.
+
+	-OFDMA (Orthogonal Frequency Division Multiple Access): Allows more efficient use of the spectrum by splitting channels into smaller sub-channels for multiple devices.
+
+	-MU-MIMO (Multi-User, Multiple Input, Multiple Output): Wi-Fi 6 supports both uplink and downlink MU-MIMO, enabling multiple devices to communicate with the router simultaneously.
+
+	-Improved Capacity: Can handle more devices in dense environments (like stadiums, offices, or apartments).
+
+
+
+
+-Wi-Fi 6E:
+
+	-6 GHz Band: Wi-Fi 6E introduces the 6 GHz band, providing an additional 1,200 MHz of spectrum to reduce congestion and improve performance in dense environments.
+
+
+
+
+-Wi-Fi 7 (802.11be):
+
+Higher Speeds: Wi-Fi 7 promises speeds up to 30 Gbps.
+
+Wider Channels: It can use 320 MHz channels, compared to Wi-Fi 6's 160 MHz channels, doubling the bandwidth.
+
+Multi-Link Operation (MLO): MLO allows devices to simultaneously connect to multiple bands (2.4 GHz, 5 GHz, and 6 GHz), improving throughput and reducing latency.
+
+Improved OFDMA and MU-MIMO: More advanced versions of these technologies, allowing for better efficiency and more users to be supported simultaneously.
+
+Advanced QAM (1024-QAM): It allows for denser data transmission, improving the throughput for devices that support it.
+
+

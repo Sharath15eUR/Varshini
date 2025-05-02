@@ -1,0 +1,9 @@
+### Explain the concept of Fast BSS Transition (802.11r) and its benefit in mobile environments. ###
+
+
+-FAST BSS TRANSITION:
+	802.11r is designed to speed up the roaming process in wireless networks, which is critical for mobile environments like smartphones, tablets, and laptops.
+
+-BENEFIT IN MOBILE ENVIRONMENTS: 
+	It reduces the time it takes for a device to switch between access points when moving around in a network.
+	Providing a more seamless experience (important for calls, video streaming, and online gaming).

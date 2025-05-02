@@ -1,0 +1,12 @@
+### What is the purpose of 802.11k and v, and how does it aid in roaming? ###
+
+
+
+-802.11k (Radio Resource Management): 
+	Helps devices find the best access point to connect to by providing information about the network’s performance, such as signal strength and congestion.
+
+-802.11v (Network Assisted Roaming): 
+	Allows the network to guide devices toward the best access point for a seamless handoff. This helps prevent dropped connections when moving around in a network.
+
+-Aid in Roaming: 
+	These standards ensure that when a device moves, it can quickly and seamlessly switch to the best available AP without disrupting the connection.

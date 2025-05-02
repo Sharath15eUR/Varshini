@@ -1,0 +1,10 @@
+### Explain the significance of the 6 GHz frequency band in Wi-Fi 6E. ###
+
+
+-SIGNIFICANCE OF 6GHz BAND:
+
+	-More Spectrum: It adds an additional 1,200 MHz of spectrum.
+
+	-Less Interference: The 6 GHz band is less crowded, so there is less interference from older Wi-Fi standards.
+
+	-Wider Channels: The 6 GHz band supports 160 MHz channels, which is ideal for high-bandwidth applications.

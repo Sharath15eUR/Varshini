@@ -1,0 +1,14 @@
+### What are the major innovations introduced in Wi-Fi 7 (802.11be)? ###
+
+
+-30 Gbps Speeds: 
+	Wi-Fi 7 is expected to support speeds up to 30 Gbps, and the use of 320 MHz channels and advanced QAM (1024-QAM).
+
+-Multi-Link Operation (MLO): 
+	MLO allows devices to connect to multiple frequency bands (2.4 GHz, 5 GHz, and 6 GHz) simultaneously, improving throughput and reducing latency.
+
+-Improved MU-MIMO and OFDMA: 
+	These technologies have been enhanced to support even more simultaneous connections and more efficient data transmission.
+
+-Low Latency: 
+	Wi-Fi 7 aims to provide ultra-low latency, which is essential for applications like AR/VR, gaming, and live streaming.

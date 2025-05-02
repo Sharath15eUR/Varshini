@@ -1,0 +1,10 @@
+### How do 802.11k/v/r work together to provide seamless roaming in enterprise networks? ###
+
+
+802.11k provides information about nearby APs so the device can make an informed decision about which AP to connect to.
+
+802.11v allows the network to direct devices to the best AP for seamless roaming, minimizing dropped connections.
+
+802.11r speeds up the handoff process between APs by pre-authenticating the device with the new AP, reducing the time to reconnect.
+
+Together, these standards ensure that users experience seamless and reliable connections as they move throughout a large enterprise network.

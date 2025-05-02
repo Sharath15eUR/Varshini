@@ -1,0 +1,10 @@
+### Discuss the benefits of Target Wake Time (TWT) in Wi-Fi 6 for IoT devices. ###
+
+
+-TARGET WAKE TIME (TWT):
+	TWT is a feature that schedules when devices should wake up and communicate with the router, allowing IoT devices to stay in sleep mode for longer periods.
+
+-BENEFITS:
+	-Power Efficiency: By scheduling wake times, IoT devices don’t need to constantly stay connected to the network, leading to better battery life and reduced power consumption.
+
+	-Improved Network Efficiency: It helps to reduce network congestion because IoT devices communicate only at predefined times, ensuring the network is less cluttered.

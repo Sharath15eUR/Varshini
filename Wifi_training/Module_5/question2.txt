@@ -1,0 +1,12 @@
+### Explain the role of OFDMA in Wi-Fi 6 and how it improves network efficiency. ###
+
+
+
+-OFDMA:
+	-OFDMA divides the available frequency channels into smaller sub-channels, allowing multiple devices to transmit simultaneously without causing interference.
+	-In Wi-Fi 6, OFDMA enables more efficient use of spectrum by allowing multiple devices to share the same channel. It breaks up a channel into smaller sub-channels, which can then be allocated to different devices.
+	-This improves efficiency by reducing the time a device needs to wait for a transmission slot, especially in high-density environments.
+
+
+-Improved Efficiency: 
+	Previously, devices had to wait for an entire channel to be free before transmitting. With OFDMA, many devices can transmit in parallel, reducing delays and congestion.

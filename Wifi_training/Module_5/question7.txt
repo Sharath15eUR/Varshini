@@ -1,0 +1,11 @@
+### Explain the concept of Multi-Link Operation (MLO) and its impact on throughput and latency. ###
+
+
+-MULTI-LINK OPERATION(MLO):
+	MLO allows devices to use multiple frequency bands (2.4 GHz, 5 GHz, and 6 GHz) at the same time, distributing the load across different channels.
+
+-IMPACT ON THROUGHPUT: 
+	By using multiple bands simultaneously, MLO can aggregate bandwidth, resulting in much higher data throughput.
+
+-IMPACT ON LATENCY: 
+	MLO can help reduce latency because if one frequency band is congested, the device can switch to another band without needing to wait, ensuring smooth and fast data transmission.
