@@ -1,0 +1,17 @@
+### How does 802.1X enhance security over wireless networks? ###
+
+
+
+-802.1X enhances wireless security by integrating authentication, authorization, and accounting (AAA) into Wi-Fi connections. 
+
+It provides the following advantages:
+
+	-Uses Extensible Authentication Protocol (EAP) methods to support secure authentication using passwords, certificates, smart cards, or other credentials.
+
+	-Enables individualized session keys for each user, preventing eavesdropping between clients on the same network.
+
+	-Supports dynamic VLAN assignment and role-based access control, tailoring network access based on user identity.
+
+	-Works with WPA2/WPA3-Enterprise modes to provide strong mutual authentication between the client and the authentication server via the access point.
+
+	-This results in a scalable, robust, and secure solution for managing access to enterprise wireless networks.

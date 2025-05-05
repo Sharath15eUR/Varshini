@@ -1,0 +1,28 @@
+### Explain the differences between WEP, WPA, WPA2, and WPA3. ###
+
+
+
+These are four successive generations of Wi-Fi security protocols, each improving upon the weaknesses of its predecessor:
+
+-WEP (Wired Equivalent Privacy) 
+	-It was the original Wi-Fi security protocol. 
+	-It used RC4 stream encryption with static keys and a 24-bit initialization vector (IV). 
+	-Due to weak key management and short IVs, it became easy to crack using basic tools. 
+	-It is now considered obsolete and insecure.
+
+
+-WPA (Wi-Fi Protected Access) 
+	-It was introduced as an interim fix to WEP’s vulnerabilities. 	-It used TKIP (Temporal Key Integrity Protocol), which dynamically changed encryption keys for each packet but still relied on RC4 encryption.
+
+
+-WPA2 
+	-It significantly improved security by implementing AES-based encryption through CCMP.
+	-It also formalized the 4-way handshake and improved data integrity, making it much more robust for both personal and enterprise use.
+
+
+-WPA3 
+	-It is the latest standard and introduces modern cryptographic techniques, such as Simultaneous Authentication of Equals (SAE), which replaces the PSK-based handshake and provides protection against offline dictionary attacks. 
+	-It also supports forward secrecy and stronger encryption in open networks (via Opportunistic Wireless Encryption - OWE).
+
+
+Each generation improved on the security flaws and limitations of the previous one, with WPA3 now being the most secure.

@@ -1,0 +1,17 @@
+### What is the role of the Pairwise Master Key (PMK) in the 4-way handshake? ###
+
+
+
+-PMK(PAIRWISE MASTER KEY):
+	-The Pairwise Master Key (PMK) is a central component of the WPA/WPA2 4-way handshake, used to derive encryption keys between the client (supplicant) and access point (authenticator).
+
+	-The PMK is derived from the passphrase in WPA/WPA2-Personal, or provided by the authentication server in WPA2-Enterprise.
+
+	-It is not transmitted over the air, preserving its confidentiality.
+
+
+-During the 4-way handshake, the PMK is used along with nonces (random values) and MAC addresses to generate the Pairwise Transient Key (PTK).
+
+-The PTK is then used to create session keys for encrypting and authenticating data on the Wi-Fi link.
+
+-The PMK ensures that only clients with the correct credentials can establish a secure and encrypted connection with the network.

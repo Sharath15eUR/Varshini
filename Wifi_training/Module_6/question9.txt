@@ -1,0 +1,16 @@
+### What problem does 802.1X solve in a network? ###
+
+
+
+-802.1X solves the problem of unauthorized access to network resources, especially in enterprise environments. 
+-It provides port-based Network Access Control (PNAC), ensuring that only authenticated users or devices can access the network.
+
+
+-Key problems it addresses include:
+
+	-Preventing unauthorized users from joining wired or wireless networks.
+	-Allowing centralized authentication, typically using a RADIUS server.
+	-Supporting per-user credentials and dynamic session keys, improving accountability and security.
+	-Enforcing network policies before granting access, such as device compliance checks.
+
+By using 802.1X, organizations can tightly control who and what connects to their network infrastructure.

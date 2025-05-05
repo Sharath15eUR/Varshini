@@ -1,0 +1,16 @@
+### What will happen if we put a wrong passphrase during a 4 Way handshake?  ###
+
+
+
+If a client enters the wrong passphrase, the following will happen during the 4-way handshake:
+
+	-The client will derive an incorrect PMK, which results in an incorrect PTK.
+
+	-When the client sends its handshake message with a MIC (Message Integrity Code), the access point will attempt to validate it using its own PTK (based on the correct PMK).
+
+	-Since the keys do not match, the MIC validation will fail, and the access point will terminate the handshake.
+
+	-The client will fail to connect to the network and may retry multiple times, depending on device behavior.
+
+This mechanism prevents unauthorized access and protects against brute-force attacks when combined with modern WPA2/WPA3 protections.
+

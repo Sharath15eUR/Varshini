@@ -1,0 +1,17 @@
+### Why was WPA2 introduced? ###
+
+
+
+-WPA2:
+	-WPA2 was introduced to address the limitations and vulnerabilities of both WEP and WPA. 
+	-While WPA was a temporary solution, WPA2 was the full implementation of the IEEE 802.11i standard, which defined stronger security mechanisms for wireless networks.
+
+
+-FEATURES:
+	-Stronger encryption using AES instead of the outdated RC4 algorithm.
+
+	-Introduction of CCMP for enhanced integrity and confidentiality.
+
+	-More secure key management, including dynamic session keys and the standardized 4-way handshake.
+
+WPA2 provided long-term, enterprise-grade security and quickly became the mandatory standard for certified Wi-Fi devices.

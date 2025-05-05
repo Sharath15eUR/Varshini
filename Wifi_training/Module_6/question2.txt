@@ -1,0 +1,17 @@
+### Explain the difference between authentication and encryption in WiFi security. ###
+
+
+
+In Wi-Fi security, authentication and encryption serve two distinct but complementary purposes:
+
+-AUTHENTICATION:
+	-It is the process of verifying the identity of a device or user before granting access to the wireless network. 
+	-It ensures that only authorized users can connect.
+	-Authentication can be performed using a pre-shared key (PSK) in personal networks or using credentials and certificates via 802.1X in enterprise environments.
+
+
+-ENCRYPTION:
+	-It is the process of encoding data so that it cannot be read by unauthorized parties. 
+	-Once a device is authenticated, encryption protocols are used to protect the data as it is transmitted over the air.
+
+Both are essential for maintaining confidentiality, integrity and authenticity in Wi-Fi communication.

@@ -1,0 +1,20 @@
+### What are the pillars of Wi-Fi security? ###
+
+
+
+-CONFIDENTIALITY: 
+	-It ensures that sensitive data transmitted over the wireless network is kept private and cannot be intercepted or read by unauthorized users. 
+	-This is primarily achieved through strong encryption protocols like WPA2 or WPA3, which protect data packets during transmission.
+
+
+-INTEGRITY: 
+	-Integrity means ensuring that the data sent over the network has not been altered, tampered with, or corrupted in transit. 
+	-Techniques such as Message Integrity Codes (MICs) in WPA/WPA2 help detect unauthorized changes to packets.
+
+
+-AUTHENTICITY:
+	-Authenticity confirms that the entities participating in the communication are who they claim to be. 
+	-In Wi-Fi, this is enforced through authentication protocols, such as pre-shared keys in WPA2-Personal or certificate-based authentication in WPA2/WPA3-Enterprise (using 802.1X).
+
+
+Together, these pillars form the basis for secure wireless communication, ensuring that data remains protected, accurate, and accessible.
