@@ -1,0 +1,58 @@
+C:\Users\DELL\Desktop\Linux\Advanced_C_Training>gcc Topic1_Structure.c -o Topic1
+
+C:\Users\DELL\Desktop\Linux\Advanced_C_Training>.\Topic1.exe
+
+===== Weekly Task Manager =====
+1. Add tasks to a day
+2. Display all tasks
+3. Exit
+Enter your choice: 1
+Select a day (0=Mon, 1=Tue, ..., 6=Sun): 5
+You selected Saturday. You can add up to 3 tasks.
+Enter task 1 (or type 'done' to stop): Eat
+Enter task 2 (or type 'done' to stop): Code
+Enter task 3 (or type 'done' to stop): Sleep
+
+===== Weekly Task Manager =====
+1. Add tasks to a day
+2. Display all tasks
+3. Exit
+Enter your choice: 1
+Select a day (0=Mon, 1=Tue, ..., 6=Sun): 2
+You selected Wednesday. You can add up to 3 tasks.
+Enter task 1 (or type 'done' to stop): Listen
+Enter task 2 (or type 'done' to stop): Study
+Enter task 3 (or type 'done' to stop): Centum
+
+===== Weekly Task Manager =====
+1. Add tasks to a day
+2. Display all tasks
+3. Exit
+Enter your choice: 2
+
+===== Weekly Tasks =====
+Monday:
+  No tasks
+Tuesday:
+  No tasks
+Wednesday:
+  - Listen
+  - Study
+  - Centum
+Thursday:
+  No tasks
+Friday:
+  No tasks
+Saturday:
+  - Eat
+  - Code
+  - Sleep
+Sunday:
+  No tasks
+
+===== Weekly Task Manager =====
+1. Add tasks to a day
+2. Display all tasks
+3. Exit
+Enter your choice: 3
+Exit!
