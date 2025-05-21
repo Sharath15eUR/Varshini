@@ -1,0 +1,34 @@
+C:\Users\DELL\Desktop\Linux\Advanced_C_Training\Module_2>gcc -pthread -o thread_program1 Question_1.c
+
+C:\Users\DELL\Desktop\Linux\Advanced_C_Training\Module_2>.\thread_program1
+Enter N (number of prime numbers to sum): 100
+Sum of first 100 prime numbers is: 24133
+Thread 2 running
+Thread 1 running
+Thread 1 running
+Thread 2 running
+Thread 1 running
+Thread 1 running
+Thread 2 running
+Thread 1 running
+Thread 2 running
+Thread 1 running
+Thread 2 running
+Thread 1 running
+Thread 1 running
+Thread 2 running
+Thread 1 running
+Thread 2 running
+Thread 1 running
+Thread 1 running
+Thread 2 running
+Thread 1 running
+Thread 2 running
+Thread 1 running
+Thread 1 running
+Thread 2 running
+Thread 1 running
+Thread 2 running
+Thread 1 running
+Thread 1 running
+Thread 2 running
